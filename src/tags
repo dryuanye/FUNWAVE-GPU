@@ -1,0 +1,1235 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+1	samples.F	/^1        fx  = r+x*(q+x*(p+x))$/;"	l	subroutine:SUB_SLTRY	file:
+100	io.F	/^100  FORMAT(5000E16.6)$/;"	l	subroutine:PutFile	file:
+100	mod_cuda.F	/^100       format( ' Device Number : ', i0 )$/;"	l	subroutine:cudadeviceQuery	file:
+100	mod_input.F	/^  100 CONTINUE$/;"	l	subroutine:READ_VALUE	file:
+100	samples.F	/^100   continue$/;"	l	subroutine:INITIAL_WAVE	file:
+100	wavemaker.F	/^100     continue$/;"	l	subroutine:CALCULATE_TMA_Cm_Sm	file:
+100	wavemaker.F	/^100     continue$/;"	l	subroutine:WK_WAVEMAKER_IRREGULAR_WAVE	file:
+101	io.F	/^101   continue$/;"	l	subroutine:PREVIEW	file:
+101	mod_cuda.F	/^101       format( ' Device Name : ',a )$/;"	l	subroutine:cudadeviceQuery	file:
+101	statistics.F	/^101  FORMAT(6E12.4)$/;"	l	subroutine:STATISTICS	file:
+102	io.F	/^102     FORMAT(A20,I6)$/;"	l	subroutine:PREVIEW_MEAN	file:
+102	io.F	/^102     FORMAT(A20,I6,A14,F12.3,A2,F12.3)$/;"	l	subroutine:PREVIEW	file:
+102	mod_cuda.F	/^102       format( ' Compute Capability : ',i0 , '. ' , i0 )$/;"	l	subroutine:cudadeviceQuery	file:
+103	mod_cuda.F	/^103       format( ' Number of Multiprocessors : ', i0 )$/;"	l	subroutine:cudadeviceQuery	file:
+104	mod_cuda.F	/^104       format( ' Max Clock Rate ( kHz ): ',i0 )$/;"	l	subroutine:cudadeviceQuery	file:
+105	mod_cuda.F	/^105       format( ' Max Grid Dims : ' ,2( i0 , ' x ') , i0 )$/;"	l	subroutine:cudadeviceQuery	file:
+106	mod_cuda.F	/^106       format(' Max Block Dims : ' ,2( i0 , ' x ') , i0 )$/;"	l	subroutine:cudadeviceQuery	file:
+107	mod_cuda.F	/^107       format( ' Max Threads per Block : ',i0 )$/;"	l	subroutine:cudadeviceQuery	file:
+107	sources.F	/^107  format(500f12.6)$/;"	l	subroutine:SourceTerms	file:
+111	mod_meteo.F	/^111    CONTINUE$/;"	l	subroutine:Contant_Wind_Field_Setup	file:
+119	nesting.F	/^119      FORMAT(5E16.6)  ! this is a fixed format for I\/O$/;"	l	subroutine:OneWayCoupling	file:
+119	nesting.F	/^119      FORMAT(5E16.6)$/;"	l	subroutine:COUPLING_INITIAL	file:
+120	mod_meteo.F	/^120 CONTINUE  ! no more data for vessel Kves$/;"	l	subroutine:Holland_Model_Forcing	file:
+120	mod_meteo.F	/^120 CONTINUE  ! no more data for vessel Kves$/;"	l	subroutine:MeteoGausian_Forcing	file:
+120	mod_meteo.F	/^120 CONTINUE  ! no more data for vessel Kves$/;"	l	subroutine:Slide_Model_Forcing	file:
+120	mod_tracer.F	/^120       continue$/;"	l	subroutine:GET_XY_POSITION	file:
+120	mod_vessel.F	/^120 CONTINUE  ! no more data for vessel Kves$/;"	l	subroutine:VESSEL_FORCING	file:
+120	nesting.F	/^120 CONTINUE$/;"	l	subroutine:OneWayCoupling	file:
+200	samples.F	/^200  continue$/;"	l	subroutine:INITIAL_WAVE	file:
+210	io.F	/^210   FORMAT(5000I3)$/;"	l	subroutine:PREVIEW	file:
+213	samples.F	/^213  continue$/;"	l	subroutine:INITIAL_WAVE	file:
+300	mod_tracer.F	/^300       CONTINUE  ! re-search$/;"	l	subroutine:GET_XY_POSITION	file:
+55	wavemaker.F	/^55   Fk = Grav*Wave_Number_Ser(I)*tanh(Wave_Number_Ser(I)*Dep_Ser)-Segma_Ser(I)**2$/;"	l	subroutine:CALCULATE_DATA2D_Cm_Sm	file:
+65	wavemaker.F	/^65   continue$/;"	l	subroutine:CALCULATE_DATA2D_Cm_Sm	file:
+86	sediment.F	/^	86 continue$/;"	l	subroutine:update_bed	file:
+881	io.F	/^881  INPUT_PHASE = .TRUE.$/;"	l	subroutine:READ_INPUT	file:
+96	sediment.F	/^96 continue$/;"	l	subroutine:update_bed	file:
+99	mod_cuda.F	/^99        format( '\/ ', i0, ' CUDA devices found \/')$/;"	l	subroutine:cudadeviceQuery	file:
+991	io.F	/^991  CONTINUE$/;"	l	subroutine:READ_INPUT	file:
+ABSORBING_GENERATING_BC	sponge.F	/^SUBROUTINE ABSORBING_GENERATING_BC$/;"	s
+ACCURATE	mod_global.F	/^       LOGICAL :: ACCURATE /;"	v	module:GLOBAL
+AGE_BREAKING	mod_global.F	/^        REAL(SP),DIMENSION(:,:),ALLOCATABLE :: AGE_BREAKING$/;"	v	module:GLOBAL
+ALLOCATE_VARIABLES	init.F	/^SUBROUTINE ALLOCATE_VARIABLES$/;"	s
+ALLOCATE_VARIABLES_GPU	init_gpu.F	/^subroutine ALLOCATE_VARIABLES_GPU$/;"	s	module:init_gpu
+AMP	samples.F	/^     REAL(SP),INTENT(IN) :: DX,DY,Xc,Yc,WID,AMP$/;"	v
+AMP	samples.F	/^     REAL(SP),INTENT(IN) :: Xc,Yc,WID,AMP,/;"	v
+AMP_SOLI	mod_global.F	/^        REAL(SP)::AMP_SOLI,/;"	v	module:GLOBAL
+AMP_WK	mod_global.F	/^                  Xc,Yc, WID,Xc_WK,Tperiod,AMP_WK,/;"	v	module:GLOBAL
+A_beg	etauv_solver_gpu.F	/^    real(SP), dimension(:), allocatable :: A_beg,/;"	v	module:etauv_solver_module
+A_sed	mod_sediment.F	/^    REAL(SP) :: Shields_cr,A_sed,/;"	v	module:SEDIMENT_MODULE
+A_sponge	mod_global.F	/^                  R_sponge,A_sponge$/;"	v	module:GLOBAL
+A_sponge_wavemaker	mod_global.F	/^                   R_sponge_wavemaker,A_sponge_wavemaker$/;"	v	module:GLOBAL
+A_storm1	mod_meteo.F	/^                Pn_storm1, Pc_storm1,A_storm1,/;"	v	module:METEO_MODULE
+A_storm2	mod_meteo.F	/^                Pn_storm2, Pc_storm2,A_storm2,/;"	v	module:METEO_MODULE
+AirPressure	mod_meteo.F	/^       LOGICAL :: AirPressure /;"	v	module:METEO_MODULE
+Allocated_1	etauv_solver_gpu.F	/^        Logical :: Allocated_1 /;"	v	module:etauv_solver_module
+Allocated_2	etauv_solver_gpu.F	/^        Logical :: Allocated_1 = .False., Allocated_2 /;"	v	module:etauv_solver_module
+AlphaSlide	mod_meteo.F	/^    REAL(SP) :: LengthSlide,WidthSlide,AlphaSlide,/;"	v	module:METEO_MODULE
+AlphaVessel	mod_vessel.F	/^                                       LengthVessel,WidthVessel, &$/;"	v	module:VESSEL_MODULE
+Amp_Ser	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Amp_Ser,/;"	v	module:GLOBAL
+AssignDevice	init_gpu.F	/^subroutine AssignDevice$/;"	s	module:init_gpu
+Avalanche	mod_sediment.F	/^    LOGICAL :: Avalanche=/;"	v	module:SEDIMENT_MODULE
+BATHY_CORRECTION	mod_global.F	/^       LOGICAL :: BATHY_CORRECTION /;"	v	module:GLOBAL
+BATHY_CORRECTION_MODULE	mod_bathy_correction.F	/^MODULE BATHY_CORRECTION_MODULE$/;"	m
+BOUNDARY_CONDITION	bc.F	/^SUBROUTINE BOUNDARY_CONDITION$/;"	s
+BOUNDARY_CONDITION_FLUXES_GPU	exchange_gpu.F	/^SUBROUTINE BOUNDARY_CONDITION_FLUXES_GPU$/;"	s	module:boundary_condition_module
+BREAKING	breaker.F	/^SUBROUTINE BREAKING(/;"	s
+BREAKWATER	mod_global.F	/^       LOGICAL :: BREAKWATER /;"	v	module:GLOBAL
+BREAKWATER_FILE	mod_global.F	/^       CHARACTER(LEN=80) BREAKWATER_FILE$/;"	v	module:GLOBAL
+BROADCAST_XY	mod_tracer.F	/^SUBROUTINE BROADCAST_XY$/;"	s	module:TRACER
+B_storm1	mod_meteo.F	/^                Pn_storm1, Pc_storm1,A_storm1,B_storm1,/;"	v	module:METEO_MODULE
+B_storm2	mod_meteo.F	/^                Pn_storm2, Pc_storm2,A_storm2,B_storm2,/;"	v	module:METEO_MODULE
+BedFluxX	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::BedFluxX,/;"	v	module:SEDIMENT_MODULE
+BedFluxY	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::BedFluxX,BedFluxY$/;"	v	module:SEDIMENT_MODULE
+BedLoad	mod_sediment.F	/^    LOGICAL :: BedLoad /;"	v	module:SEDIMENT_MODULE
+Bed_Change	mod_sediment.F	/^    LOGICAL :: Bed_Change=/;"	v	module:SEDIMENT_MODULE
+BetaSlide	mod_meteo.F	/^    REAL(SP) :: LengthSlide,WidthSlide,AlphaSlide,BetaSlide,/;"	v	module:METEO_MODULE
+BetaVessel	mod_vessel.F	/^                                       AlphaVessel,BetaVessel,/;"	v	module:VESSEL_MODULE
+Beta_1	mod_global.F	/^       REAL(SP) :: Beta_1,/;"	v	module:GLOBAL
+Beta_2	mod_global.F	/^       REAL(SP) :: Beta_1,Beta_2$/;"	v	module:GLOBAL
+Beta_gen	mod_global.F	/^                  rlamda,Time_ramp,D_gen,Beta_gen,/;"	v	module:GLOBAL
+Beta_gen2D	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Beta_gen2D,/;"	v	module:GLOBAL
+Beta_genS	mod_global.F	/^       REAL(SP),DIMENSION(:),ALLOCATABLE :: Beta_genS,/;"	v	module:GLOBAL
+Beta_gen_ir	mod_global.F	/^        REAL(SP),DIMENSION(:),ALLOCATABLE :: Beta_gen_ir,/;"	v	module:GLOBAL
+Beta_ref	mod_global.F	/^       REAL(SP) :: Beta_ref=/;"	v	module:GLOBAL
+BlockDimX_2D	mod_cuda.F	/^    integer, parameter :: BlockDimX_2D /;"	v	module:mod_cuda
+BlockDimX_Inner_2D	mod_cuda.F	/^    integer, parameter :: BlockDimX_Inner_2D /;"	v	module:mod_cuda
+BlockDimY_2D	mod_cuda.F	/^    integer, parameter :: BlockDimX_2D = 16, BlockDimY_2D /;"	v	module:mod_cuda
+BlockDimY_Inner_2D	mod_cuda.F	/^    integer, parameter :: BlockDimX_Inner_2D = 14, BlockDimY_Inner_2D /;"	v	module:mod_cuda
+BreakWaterAbsorbCoef	mod_global.F	/^       REAL(SP) :: BreakWaterAbsorbCoef$/;"	v	module:GLOBAL
+BreakWaterWidth	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: &$/;"	v	module:GLOBAL
+CALCULATE_CD_BREAKWATER	sponge.F	/^SUBROUTINE CALCULATE_CD_BREAKWATER$/;"	s
+CALCULATE_Cm_Sm	wavemaker.F	/^SUBROUTINE CALCULATE_Cm_Sm(/;"	s
+CALCULATE_DATA2D_Cm_Sm	wavemaker.F	/^SUBROUTINE CALCULATE_DATA2D_Cm_Sm$/;"	s
+CALCULATE_DIFFUSION_SPONGE	sponge.F	/^SUBROUTINE CALCULATE_DIFFUSION_SPONGE(/;"	s
+CALCULATE_FRICTION_SPONGE	sponge.F	/^SUBROUTINE CALCULATE_FRICTION_SPONGE(/;"	s
+CALCULATE_MEAN	mixing.F	/^      SUBROUTINE CALCULATE_MEAN(/;"	s
+CALCULATE_MEAN_GPU	mixing_gpu.F	/^SUBROUTINE CALCULATE_MEAN_GPU$/;"	s	module:calculate_mean_module
+CALCULATE_SPONGE	sponge.F	/^SUBROUTINE CALCULATE_SPONGE(/;"	s
+CALCULATE_SPONGE_MAKER	sponge.F	/^SUBROUTINE CALCULATE_SPONGE_MAKER(/;"	s
+CALCULATE_TMA_Cm_Sm	wavemaker.F	/^SUBROUTINE CALCULATE_TMA_Cm_Sm /;"	s
+CALCULATE_TMA_Cm_Sm_EQUAL_DFREQ	wavemaker.F	/^SUBROUTINE CALCULATE_TMA_Cm_Sm_EQUAL_DFREQ /;"	s
+CAL_DISPERSION	dispersion.F	/^SUBROUTINE CAL_DISPERSION$/;"	s
+CD_4_SPONGE	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: CD_4_SPONGE$/;"	v	module:GLOBAL
+CD_FILE	mod_global.F	/^        CHARACTER(LEN=80) CD_FILE$/;"	v	module:GLOBAL
+CD_breakwater	mod_global.F	/^                BreakWaterWidth,CD_breakwater$/;"	v	module:GLOBAL
+CDsponge	mod_global.F	/^       REAL(SP) :: CDsponge /;"	v	module:GLOBAL
+CFL	mod_global.F	/^       REAL(SP) :: CFL=/;"	v	module:GLOBAL
+CH	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CH,/;"	v	module:SEDIMENT_MODULE
+CH0	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::FsL,FsR,GsL,GsR,Fs,Gs,CH0,/;"	v	module:SEDIMENT_MODULE
+CHECK_BLOWUP	misc.F	/^SUBROUTINE CHECK_BLOWUP$/;"	s
+CHECK_CONSISTENCY_TYPE	mod_input.F	/^  SUBROUTINE CHECK_CONSISTENCY_TYPE(/;"	s	module:INPUT_READ
+CHH	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CH,CHX,CHY,CHH,/;"	v	module:SEDIMENT_MODULE
+CHH0	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::Hpo,CHH0,/;"	v	module:SEDIMENT_MODULE
+CHHxL	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CH,CHX,CHY,CHH,CHHxR,CHHxL,/;"	v	module:SEDIMENT_MODULE
+CHHxR	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CH,CHX,CHY,CHH,CHHxR,/;"	v	module:SEDIMENT_MODULE
+CHHyL	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CHHyR,CHHyL,/;"	v	module:SEDIMENT_MODULE
+CHHyR	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CHHyR,/;"	v	module:SEDIMENT_MODULE
+CHX	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CH,CHX,/;"	v	module:SEDIMENT_MODULE
+CHXxL	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CH,CHX,CHY,CHH,CHHxR,CHHxL,CHXxL,/;"	v	module:SEDIMENT_MODULE
+CHXxR	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CH,CHX,CHY,CHH,CHHxR,CHHxL,CHXxL,CHXxR$/;"	v	module:SEDIMENT_MODULE
+CHY	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CH,CHX,CHY,/;"	v	module:SEDIMENT_MODULE
+CHYyL	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CHHyR,CHHyL,CHYyL,/;"	v	module:SEDIMENT_MODULE
+CHYyR	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CHHyR,CHHyL,CHYyL,CHYyR,/;"	v	module:SEDIMENT_MODULE
+CLIB	Makefile	/^         CLIB     = $/;"	m
+CONSTR	mod_global.F	/^       CHARACTER(LEN=80) CONSTR$/;"	v	module:GLOBAL
+CONSTRUCTION	fluxes.F	/^SUBROUTINE CONSTRUCTION$/;"	s
+CONSTRUCTION_HO	fluxes.F	/^SUBROUTINE CONSTRUCTION_HO$/;"	s
+CONSTRUCTION_HO_GPU	moment_gpu.F	/^subroutine CONSTRUCTION_HO_GPU$/;"	s	module:DispersionFluxesSources
+CONSTRUCTION_HO_minmod	fluxes.F	/^SUBROUTINE CONSTRUCTION_HO_minmod$/;"	s
+CONSTRUCT_HO_X_minmod	fluxes.F	/^SUBROUTINE CONSTRUCT_HO_X_minmod(/;"	s
+CONSTRUCT_HO_Y	fluxes.F	/^SUBROUTINE CONSTRUCT_HO_Y(/;"	s
+CONSTRUCT_HO_Y_minmod	fluxes.F	/^SUBROUTINE CONSTRUCT_HO_Y_minmod(/;"	s
+CONSTRUCT_X	fluxes.F	/^SUBROUTINE CONSTRUCT_X(/;"	s
+CONSTRUCT_Y	fluxes.F	/^SUBROUTINE CONSTRUCT_Y(/;"	s
+CORRECTION	mod_bathy_correction.F	/^SUBROUTINE CORRECTION$/;"	s	module:BATHY_CORRECTION_MODULE
+COUPLING_FILE	mod_global.F	/^       CHARACTER(LEN=80) COUPLING_FILE$/;"	v	module:GLOBAL
+COUPLING_INITIAL	nesting.F	/^SUBROUTINE COUPLING_INITIAL$/;"	s
+CPH_SOLI	mod_global.F	/^        REAL(SP)::AMP_SOLI,DEP_SOLI,LAG_SOLI, CPH_SOLI,/;"	v	module:GLOBAL
+CPP	Makefile	/^         CPP      = \/usr\/bin\/cpp $/;"	m
+CPPARGS	Makefile	/^           CPPARGS = $(CPPFLAGS) $(DEF_FLAGS) $(FLAG_1) $(FLAG_2) \\$/;"	m
+CPPFLAGS	Makefile	/^         CPPFLAGS = $(DEF_FLAGS)$/;"	m
+C_end	etauv_solver_gpu.F	/^    real(SP), dimension(:), allocatable :: A_beg, C_end,/;"	v	module:etauv_solver_module
+C_smg	mod_global.F	/^      REAL(SP) :: T_INTV_mean = 20.0,T_sum=0.0,C_smg=/;"	v	module:GLOBAL
+CalcPeriodicTheta	wavemaker.F	/^SUBROUTINE CalcPeriodicTheta(/;"	s
+Cbrk1	mod_global.F	/^        REAL(SP) :: Cbrk1=/;"	v	module:GLOBAL
+Cbrk2	mod_global.F	/^        REAL(SP) :: Cbrk1=0.65,Cbrk2=/;"	v	module:GLOBAL
+Cd	mod_global.F	/^        REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Cd$/;"	v	module:GLOBAL
+Cd_fixed	mod_global.F	/^        REAL(SP):: Cd_fixed$/;"	v	module:GLOBAL
+Cdw	mod_meteo.F	/^       REAL(SP) :: Cdw,/;"	v	module:METEO_MODULE
+Cm	mod_global.F	/^        REAL(SP),DIMENSION(:,:,:),ALLOCATABLE ::Cm,/;"	v	module:GLOBAL
+Cm_eta	mod_global.F	/^       REAL(SP),DIMENSION(:,:,:),ALLOCATABLE ::Cm_eta,/;"	v	module:GLOBAL
+Cm_u	mod_global.F	/^       REAL(SP),DIMENSION(:,:,:),ALLOCATABLE ::Cm_eta,Sm_eta, &$/;"	v	module:GLOBAL
+Cm_v	mod_global.F	/^                Cm_u,Sm_u,Cm_v,/;"	v	module:GLOBAL
+Constant_Wind_Forcing	mod_meteo.F	/^SUBROUTINE Constant_Wind_Forcing$/;"	s	module:METEO_MODULE
+Contant_Wind_Field_Setup	mod_meteo.F	/^SUBROUTINE Contant_Wind_Field_Setup$/;"	s	module:METEO_MODULE
+Coriolis	mod_global.F	/^          Dx,Dy, Coriolis,/;"	v	module:GLOBAL
+Coriolis_FILE	mod_global.F	/^       CHARACTER(LEN=80) Coriolis_FILE$/;"	v	module:GLOBAL
+Counter	mod_sediment.F	/^    REAL(SP) :: D50,Sdensity,n_porosity,DT1,Counter,/;"	v	module:SEDIMENT_MODULE
+Counter_ava	mod_sediment.F	/^    INTEGER :: Counter_s=0, Counter_ava=/;"	v	module:SEDIMENT_MODULE
+Counter_s	mod_sediment.F	/^    INTEGER :: Counter_s=/;"	v	module:SEDIMENT_MODULE
+CrestLimit	mod_global.F	/^       REAL(SP) :: CrestLimit,/;"	v	module:GLOBAL
+Csp	mod_global.F	/^       REAL(SP) :: Csp /;"	v	module:GLOBAL
+CudaMemUse	init_gpu.F	/^subroutine CudaMemUse$/;"	s	module:init_gpu
+D	mod_sediment.F	/^    REAL(SP),DI/;"	v	module:SEDIMENT_MODULE
+D50	mod_sediment.F	/^    REAL(SP) :: D50,/;"	v	module:SEDIMENT_MODULE
+DEBFLGS	Makefile	/^         DEBFLGS  = $/;"	m
+DEF_FLAGS	Makefile	/^            DEF_FLAGS     = -P -traditional $/;"	m
+DEG2RAD	mod_param.F	/^       REAL(SP), PARAMETER:: DEG2RAD /;"	v	module:PARAM
+DEPTH_FILE	mod_global.F	/^       CHARACTER(LEN=80) DEPTH_FILE$/;"	v	module:GLOBAL
+DEPTH_TYPE	mod_global.F	/^       CHARACTER(LEN=80) DEPTH_TYPE$/;"	v	module:GLOBAL
+DEP_SOLI	mod_global.F	/^        REAL(SP)::AMP_SOLI,DEP_SOLI,/;"	v	module:GLOBAL
+DEP_WK	mod_global.F	/^                  Xc,Yc, WID,Xc_WK,Tperiod,AMP_WK,DEP_WK,/;"	v	module:GLOBAL
+DERIVATIVE_X	derivatives.F	/^SUBROUTINE DERIVATIVE_X(/;"	s
+DERIVATIVE_XX	derivatives.F	/^SUBROUTINE DERIVATIVE_XX(/;"	s
+DERIVATIVE_XX_HIGH	derivatives.F	/^SUBROUTINE DERIVATIVE_XX_HIGH(/;"	s
+DERIVATIVE_XY	derivatives.F	/^SUBROUTINE DERIVATIVE_XY(/;"	s
+DERIVATIVE_XY_HIGH	derivatives.F	/^SUBROUTINE DERIVATIVE_XY_HIGH(/;"	s
+DERIVATIVE_X_High	derivatives.F	/^SUBROUTINE DERIVATIVE_X_High(/;"	s
+DERIVATIVE_Y	derivatives.F	/^SUBROUTINE DERIVATIVE_Y(/;"	s
+DERIVATIVE_YY	derivatives.F	/^SUBROUTINE DERIVATIVE_YY(/;"	s
+DERIVATIVE_YY_HIGH	derivatives.F	/^SUBROUTINE DERIVATIVE_YY_HIGH(/;"	s
+DERIVATIVE_Y_High	derivatives.F	/^SUBROUTINE DERIVATIVE_Y_High(/;"	s
+DIFFUSION_SPONGE	mod_global.F	/^       LOGICAL :: DIFFUSION_SPONGE /;"	v	module:GLOBAL
+DIRECT_SPONGE	mod_global.F	/^       LOGICAL :: DIRECT_SPONGE /;"	v	module:GLOBAL
+DISPERSION	mod_global.F	/^       LOGICAL :: DISPERSION=/;"	v	module:GLOBAL
+DISP_TIME_LEFT	mod_global.F	/^       LOGICAL :: DISP_TIME_LEFT=/;"	v	module:GLOBAL
+DISTRIBUTE_VarGlob	parallel.F	/^SUBROUTINE DISTRIBUTE_VarGlob(/;"	s
+DP_storm1	mod_meteo.F	/^    REAL(SP) :: DP_storm2,SigmaX2, SigmaY2, Theta2, &$/;"	v	module:METEO_MODULE
+DP_storm2	mod_meteo.F	/^    REAL(SP) :: DP_storm2,/;"	v	module:METEO_MODULE
+DT	mod_global.F	/^       REAL(SP)::  DT,/;"	v	module:GLOBAL
+DT1	mod_sediment.F	/^    REAL(SP) :: D50,Sdensity,n_porosity,DT1,/;"	v	module:SEDIMENT_MODULE
+DT_fixed	mod_global.F	/^                  SCREEN_INTV,SCREEN_COUNT, &$/;"	v	module:GLOBAL
+DUtx	mod_global.F	/^          DUtxx/;"	v	module:GLOBAL
+DUtxx	mod_global.F	/^          U0,V0,Ut,Vt,Utx,Vty,Utxx,Utxy,Vtxy,Vtyy,&$/;"	v	module:GLOBAL
+DUtxy	mod_global.F	/^          DUtxx,DUtxy,/;"	v	module:GLOBAL
+DUx	mod_global.F	/^          Ux,Vx,Uy,Vy,DUx,/;"	v	module:GLOBAL
+DUxx	mod_global.F	/^          Uxx,DUxx,/;"	v	module:GLOBAL
+DUxy	mod_global.F	/^          Vxy,DVxy,Uxy,DUxy,/;"	v	module:GLOBAL
+DUy	mod_global.F	/^          Ux,Vx,Uy,Vy,DUx,DUy,/;"	v	module:GLOBAL
+DVP1	fluxes.F	/^     REAL(SP) :: TXP1,TXP2,TXP3,DVP1,/;"	v
+DVP2	fluxes.F	/^     REAL(SP) :: TXP1,TXP2,TXP3,DVP1,DVP2,/;"	v
+DVP3	fluxes.F	/^     REAL(SP) :: TXP1,TXP2,TXP3,DVP1,DVP2,DVP3$/;"	v
+DVtxy	mod_global.F	/^          DUtxx,DUtxy,DVtxy,/;"	v	module:GLOBAL
+DVty	mod_global.F	/^          DUtxx,DUtxy,DVtxy,DVtyy/;"	v	module:GLOBAL
+DVtyy	mod_global.F	/^          DUtxx,DUtxy,DVtxy,DVtyy,/;"	v	module:GLOBAL
+DVx	mod_global.F	/^          Ux,Vx,Uy,Vy,DUx,DUy,DVx,/;"	v	module:GLOBAL
+DVxy	mod_global.F	/^          Vxy,DVxy,/;"	v	module:GLOBAL
+DVy	mod_global.F	/^          Ux,Vx,Uy,Vy,DUx,DUy,DVx,DVy,/;"	v	module:GLOBAL
+DVyy	mod_global.F	/^          Uxx,DUxx,Vyy,DVyy,/;"	v	module:GLOBAL
+DX	mod_global.F	/^       REAL(SP):: DX,/;"	v	module:GLOBAL
+DX	samples.F	/^     REAL(SP),INTENT(IN) :: DX,/;"	v
+DX_FILE	mod_global.F	/^       CHARACTER(LEN=80) DX_FILE$/;"	v	module:GLOBAL
+DY	mod_global.F	/^       REAL(SP):: DX,DY$/;"	v	module:GLOBAL
+DY	samples.F	/^     REAL(SP),INTENT(IN) :: DX,DY,/;"	v
+DY_FILE	mod_global.F	/^       CHARACTER(LEN=80) DY_FILE$/;"	v	module:GLOBAL
+D_ave	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::Zb,P_ave,D_ave,/;"	v	module:SEDIMENT_MODULE
+D_gen	mod_global.F	/^                  rlamda,Time_ramp,D_gen,/;"	v	module:GLOBAL
+D_gen2D	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Beta_gen2D,D_gen2D,/;"	v	module:GLOBAL
+D_genS	mod_global.F	/^       REAL(SP),DIMENSION(:),ALLOCATABLE :: Beta_genS,D_genS$/;"	v	module:GLOBAL
+D_gen_ir	mod_global.F	/^        REAL(SP),DIMENSION(:,:),ALLOCATABLE :: D_gen_ir,/;"	v	module:GLOBAL
+D_sed	mod_sediment.F	/^    REAL(SP) :: Shields_cr,A_sed,Tau_cr,D_sed,/;"	v	module:SEDIMENT_MODULE
+Delta_WK	mod_global.F	/^                  rlamda,Time_ramp,D_gen,Beta_gen,Width_WK,Delta_WK,/;"	v	module:GLOBAL
+Delta_c	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::Zb,P_ave,D_ave,Mask_s,D,Pickup,Delta_c$/;"	v	module:SEDIMENT_MODULE
+DelxEtar	mod_global.F	/^          DelxU,DelxHU,DelxV,DelxEtar,/;"	v	module:GLOBAL
+DelxFun	fluxes.F	/^SUBROUTINE DelxFun(/;"	s
+DelxFun_kernel	moment_gpu.F	/^attributes(global) subroutine DelxFun_kernel(/;"	s	module:DispersionFluxesSources
+DelxHU	mod_global.F	/^          DelxU,DelxHU,/;"	v	module:GLOBAL
+DelxHV	mod_global.F	/^          DelxU,DelxHU,DelxV,DelxEtar,&$/;"	v	module:GLOBAL
+DelxU	mod_global.F	/^          U1p,V1p, SlopeX,SlopeY,&$/;"	v	module:GLOBAL
+DelxV	mod_global.F	/^          DelxU,DelxHU,DelxV,/;"	v	module:GLOBAL
+DelxyFun	fluxes.F	/^SUBROUTINE DelxyFun$/;"	s
+DelxyFun	moment_gpu.F	/^subroutine DelxyFun$/;"	s	module:DispersionFluxesSources
+DelyEtar	mod_global.F	/^          DelyU,DelyHV,DelyV,DelyEtar,/;"	v	module:GLOBAL
+DelyFun	fluxes.F	/^SUBROUTINE DelyFun(/;"	s
+DelyFun_kernel	moment_gpu.F	/^attributes(global) subroutine DelyFun_kernel(/;"	s	module:DispersionFluxesSources
+DelyHU	mod_global.F	/^          DelxHV, DelyHU,/;"	v	module:GLOBAL
+DelyHV	mod_global.F	/^          DelyU,DelyHV,/;"	v	module:GLOBAL
+DelyU	mod_global.F	/^          DelxHV, DelyHU, &$/;"	v	module:GLOBAL
+DelyV	mod_global.F	/^          DelyU,DelyHV,DelyV,/;"	v	module:GLOBAL
+Dep_Ser	mod_global.F	/^       REAL(SP) :: Dep_Ser,/;"	v	module:GLOBAL
+Depth	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Depth,/;"	v	module:GLOBAL
+Depth0	mod_bathy_correction.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Depth0,/;"	v	module:BATHY_CORRECTION_MODULE
+Depth1	mod_bathy_correction.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Depth0, Depth1,/;"	v	module:BATHY_CORRECTION_MODULE
+DepthNode	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Depth,DepthNode,/;"	v	module:GLOBAL
+Depth_Flat	mod_global.F	/^       REAL(SP)::Depth_Flat,/;"	v	module:GLOBAL
+Depth_ini	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::Depth_ini$/;"	v	module:SEDIMENT_MODULE
+Depth_org	mod_bathy_correction.F	/^                            Gradx,Grady,Depth_org$/;"	v	module:BATHY_CORRECTION_MODULE
+Depthx	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Depth,DepthNode,Depthx,/;"	v	module:GLOBAL
+Depthy	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Depth,DepthNode,Depthx,Depthy$/;"	v	module:GLOBAL
+Din	fluxes.F	/^     REAL(SP),DIMENSION(M,N) :: Din$/;"	v
+Dire	mod_global.F	/^       REAL(SP),DIMENSION(:),ALLOCATABLE :: Freq,Dire$/;"	v	module:GLOBAL
+DispersionFluxesSources	moment_gpu.F	/^module DispersionFluxesSources$/;"	m
+Dmass	mod_global.F	/^        REAL(SP) :: Dmass,/;"	v	module:GLOBAL
+Dphi	mod_global.F	/^       REAL(SP) :: Lon_West,Lat_South,Dphi,/;"	v	module:GLOBAL
+Dphi	samples.F	/^     REAL(SP),INTENT(IN) :: Xc,Yc,WID,AMP,Lon_West,Lat_South,Dphi,/;"	v
+Dstar	mod_sediment.F	/^    REAL(SP) :: k1,k2,k3,k4,F1,F2,F3,F4,tan_phi,Dstar,/;"	v	module:SEDIMENT_MODULE
+Dtheta	mod_global.F	/^       REAL(SP) :: Lon_West,Lat_South,Dphi,Dtheta$/;"	v	module:GLOBAL
+Dtheta	samples.F	/^     REAL(SP),INTENT(IN) :: Xc,Yc,WID,AMP,Lon_West,Lat_South,Dphi,Dtheta$/;"	v
+DwetEta	mod_global.F	/^        REAL(SP) :: Dmass,WetArea,DwetEta$/;"	v	module:GLOBAL
+Dx	mod_global.F	/^          U4,V4,&$/;"	v	module:GLOBAL
+Dy	mod_global.F	/^          Dx,Dy,/;"	v	module:GLOBAL
+ERRORi	mod_param.F	/^       REAL(SP) :: ERRORi /;"	v	module:PARAM
+ESTIMATE_DT	misc.F	/^SUBROUTINE ESTIMATE_DT(/;"	s
+ESTIMATE_DT_GPU	mod_cuda.F	/^SUBROUTINE ESTIMATE_DT_GPU(/;"	s	module:mod_cuda
+ESTIMATE_HUV	etauv_solver.F	/^SUBROUTINE ESTIMATE_HUV(/;"	s
+ESTIMATE_HUV_GPU	etauv_solver_gpu.F	/^    subroutine ESTIMATE_HUV_GPU(/;"	s	module:etauv_solver_module
+ETA2mean	mod_global.F	/^	REAL(SP),DIMENSION(:,:),ALLOCATABLE :: ETA2sum,ETA2mean,/;"	v	module:GLOBAL
+ETA2sum	mod_global.F	/^	REAL(SP),DIMENSION(:,:),ALLOCATABLE :: ETA2sum,/;"	v	module:GLOBAL
+ETAT	mod_global.F	/^          ETAx,ETAy, ETAT,/;"	v	module:GLOBAL
+ETATx	mod_global.F	/^          ETAx,ETAy, ETAT, ETATx,/;"	v	module:GLOBAL
+ETATy	mod_global.F	/^          ETAx,ETAy, ETAT, ETATx,ETATy,/;"	v	module:GLOBAL
+ETA_FILE	mod_global.F	/^       CHARACTER(LEN=80) ETA_FILE$/;"	v	module:GLOBAL
+ETA_LIMITER	mod_global.F	/^       LOGICAL :: ETA_LIMITER /;"	v	module:GLOBAL
+ETAi	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Ui,Vi,ETAi,/;"	v	module:GLOBAL
+ETAmean	mod_global.F	/^      REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Umean,Vmean,&$/;"	v	module:GLOBAL
+ETAsum	mod_global.F	/^                  ETAmean,Usum,Vsum,ETAsum,/;"	v	module:GLOBAL
+ETAx	mod_global.F	/^          Ux,Vx,Uy,Vy,DUx,DUy,DVx,DVy, &$/;"	v	module:GLOBAL
+ETAy	mod_global.F	/^          ETAx,ETAy,/;"	v	module:GLOBAL
+EXCHANGE	bc.F	/^SUBROUTINE EXCHANGE$/;"	s
+EXCHANGE_DISPERSION	bc.F	/^SUBROUTINE EXCHANGE_DISPERSION$/;"	s
+EXCHANGE_DISPERSION_GPU	exchange_gpu.F	/^SUBROUTINE EXCHANGE_DISPERSION_GPU$/;"	s	module:boundary_condition_module
+EXCHANGE_GPU	exchange_gpu.F	/^SUBROUTINE EXCHANGE_GPU$/;"	s	module:boundary_condition_module
+EXEC	Makefile	/^            EXEC          = funwave_mpi$/;"	m
+Emax	mod_global.F	/^                WaveHeightRMS,WaveHeightAve,Emax,/;"	v	module:GLOBAL
+Emin	mod_global.F	/^                WaveHeightRMS,WaveHeightAve,Emax,Emin,/;"	v	module:GLOBAL
+EqualEnergy	mod_global.F	/^        LOGICAL :: EqualEnergy /;"	v	module:GLOBAL
+Eta	samples.F	/^     REAL(SP),DIMENSION(M,N),INTENT(OUT) :: Eta$/;"	v
+Eta0	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE::Ubar0,Vbar0,Eta0,/;"	v	module:GLOBAL
+EtaBlowVal	mod_global.F	/^	 REAL(SP) :: EtaBlowVal$/;"	v	module:GLOBAL
+EtaOld	mod_global.F	/^                        UbarOld,VbarOld,EtaOld$/;"	v	module:GLOBAL
+EtaRxL	mod_global.F	/^          HUxL,HUxR,HUyL,HUyR,HxL,HxR, &$/;"	v	module:GLOBAL
+EtaRxR	mod_global.F	/^          EtaRxL,EtaRxR,/;"	v	module:GLOBAL
+EtaRyL	mod_global.F	/^          HVxL,HVxR,HVyL,HVyR,HyL,HyR, &$/;"	v	module:GLOBAL
+EtaRyR	mod_global.F	/^          EtaRyL,EtaRyR,/;"	v	module:GLOBAL
+F1	mod_sediment.F	/^    REAL(SP) :: k1,k2,k3,k4,F1,/;"	v	module:SEDIMENT_MODULE
+F2	mod_sediment.F	/^    REAL(SP) :: k1,k2,k3,k4,F1,F2,/;"	v	module:SEDIMENT_MODULE
+F3	mod_sediment.F	/^    REAL(SP) :: k1,k2,k3,k4,F1,F2,F3,/;"	v	module:SEDIMENT_MODULE
+F4	mod_sediment.F	/^    REAL(SP) :: k1,k2,k3,k4,F1,F2,F3,F4,/;"	v	module:SEDIMENT_MODULE
+FC	Makefile	/^         FC       = mpif90$/;"	m
+FFLAGS	Makefile	/^         FFLAGS = $(DEBFLGS) $(OPT) $/;"	m
+FIELD_IO_TYPE	mod_global.F	/^       CHARACTER(LEN=80) FIELD_IO_TYPE /;"	v	module:GLOBAL
+FILE_EXIST	mod_input.F	/^  LOGICAL :: FILE_EXIST$/;"	v	module:INPUT_READ
+FIXED_DT	mod_global.F	/^       LOGICAL :: FIXED_DT /;"	v	module:GLOBAL
+FLAG_1	Makefile	/^            FLAG_1 = -DDOUBLE_PRECISION $/;"	m
+FLAG_19	Makefile	/^              FLAG_19 = -DPGI$/;"	m
+FLAG_2	Makefile	/^            FLAG_2 = -DPARALLEL$/;"	m
+FLAG_20	Makefile	/^              FLAG_20 = -DTIMING$/;"	m
+FLAG_3	Makefile	/^            FLAG_3 = -DCARTESIAN$/;"	m
+FLUXES	fluxes.F	/^SUBROUTINE FLUXES$/;"	s
+FLUX_AT_INTERFACE	fluxes.F	/^SUBROUTINE FLUX_AT_INTERFACE$/;"	s
+FLUX_AT_INTERFACE_GPU	moment_gpu.F	/^subroutine FLUX_AT_INTERFACE_GPU$/;"	s	module:DispersionFluxesSources
+FLUX_AT_INTERFACE_HLL	fluxes.F	/^SUBROUTINE FLUX_AT_INTERFACE_HLL$/;"	s
+FLUX_AT_INTERFACE_HLL_GPU	moment_gpu.F	/^subroutine FLUX_AT_INTERFACE_HLL_GPU$/;"	s	module:DispersionFluxesSources
+FLUX_SCALAR_BC	mod_sediment.F	/^SUBROUTINE FLUX_SCALAR_BC(/;"	s	module:SEDIMENT_MODULE
+FORMAT_LEN	mod_global.F	/^        CHARACTER(LEN=14)::FORMAT_LEN=/;"	v	module:GLOBAL
+FOUND_IN_DOMAIN	mod_tracer.F	/^     INTEGER,SAVE,DIMENSION(:),ALLOCATABLE :: FOUND_IN_DOMAIN$/;"	v	module:TRACER
+FRICTION_SPONGE	mod_global.F	/^       LOGICAL :: FRICTION_SPONGE /;"	v	module:GLOBAL
+FUNWAVE_TVD	main.F	/^Program FUNWAVE_TVD$/;"	p
+FileNumber_HOTSTART	mod_global.F	/^       INTEGER :: FileNumber_HOTSTART$/;"	v	module:GLOBAL
+FirstCallTrack	mod_tracer.F	/^     LOGICAL,SAVE :: FirstCallTrack /;"	v	module:TRACER
+FirstCall_Met	mod_meteo.F	/^    LOGICAL :: FirstCall_Met /;"	v	module:METEO_MODULE
+Freq	mod_global.F	/^       REAL(SP),DIMENSION(:),ALLOCATABLE :: Freq,/;"	v	module:GLOBAL
+FreqMax	mod_global.F	/^        REAL(SP) :: FreqMin,FreqMax,/;"	v	module:GLOBAL
+FreqMin	mod_global.F	/^        REAL(SP) :: FreqMin,/;"	v	module:GLOBAL
+FreqPeak	mod_global.F	/^        REAL(SP) :: FreqMin,FreqMax,FreqPeak,/;"	v	module:GLOBAL
+FroudeCap	mod_global.F	/^       REAL(SP) :: FroudeCap=/;"	v	module:GLOBAL
+Fs	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::FsL/;"	v	module:SEDIMENT_MODULE
+FsL	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::FsL,/;"	v	module:SEDIMENT_MODULE
+FsR	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::FsL,FsR,/;"	v	module:SEDIMENT_MODULE
+Fx	mod_global.F	/^          DUtxx,DUtxy,DVtxy,DVtyy,DUtx,DVty,&$/;"	v	module:GLOBAL
+FxL	mod_global.F	/^          PL,PR,QL,QR, &$/;"	v	module:GLOBAL
+FxR	mod_global.F	/^          FxL,FxR,/;"	v	module:GLOBAL
+Fy	mod_global.F	/^          Fx,Fy,/;"	v	module:GLOBAL
+FyL	mod_global.F	/^          FxL,FxR,FyL,/;"	v	module:GLOBAL
+FyR	mod_global.F	/^          FxL,FxR,FyL,FyR,/;"	v	module:GLOBAL
+GET_Eta_U_V_HU_HV	etauv_solver.F	/^SUBROUTINE GET_Eta_U_V_HU_HV$/;"	s
+GET_XY_POSITION	mod_tracer.F	/^SUBROUTINE GET_XY_POSITION$/;"	s	module:TRACER
+GLOBAL	mod_global.F	/^MODULE GLOBAL$/;"	m
+GREEN_FUNCTION_SOURCE	mod_vessel.F	/^SUBROUTINE GREEN_FUNCTION_SOURCE /;"	s	module:VESSEL_MODULE
+GammaTMA	mod_global.F	/^        REAL(SP) :: FreqMin,FreqMax,FreqPeak,GammaTMA,/;"	v	module:GLOBAL
+GetFile	io.F	/^SUBROUTINE GetFile(/;"	s
+Gradx	mod_bathy_correction.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Depth0, Depth1,Gradx0/;"	v	module:BATHY_CORRECTION_MODULE
+Gradx0	mod_bathy_correction.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Depth0, Depth1,Gradx0,/;"	v	module:BATHY_CORRECTION_MODULE
+Grady	mod_bathy_correction.F	/^                            Gradx,Grady,/;"	v	module:BATHY_CORRECTION_MODULE
+Grady0	mod_bathy_correction.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Depth0, Depth1,Gradx0,Grady0,/;"	v	module:BATHY_CORRECTION_MODULE
+Gs	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::FsL,FsR,GsL/;"	v	module:SEDIMENT_MODULE
+GsL	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::FsL,FsR,GsL,/;"	v	module:SEDIMENT_MODULE
+GsR	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::FsL,FsR,GsL,GsR,/;"	v	module:SEDIMENT_MODULE
+Gx	mod_global.F	/^          Fx,Fy,HU,HV,&$/;"	v	module:GLOBAL
+GxL	mod_global.F	/^          FxL,FxR,FyL,FyR, &$/;"	v	module:GLOBAL
+GxR	mod_global.F	/^          GxL,GxR,/;"	v	module:GLOBAL
+Gy	mod_global.F	/^          Gx,Gy,/;"	v	module:GLOBAL
+GyL	mod_global.F	/^          GxL,GxR,GyL,/;"	v	module:GLOBAL
+GyR	mod_global.F	/^          GxL,GxR,GyL,GyR,/;"	v	module:GLOBAL
+Gz	mod_vessel.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: VesselFluxGradient,VesselFluxGradientEach, &$/;"	v	module:VESSEL_MODULE
+HIGH_ORDER	mod_global.F	/^       CHARACTER(LEN=80) HIGH_ORDER$/;"	v	module:GLOBAL
+HLL	fluxes.F	/^SUBROUTINE HLL(/;"	s
+HOTSTART_COUNT	mod_global.F	/^       REAL(SP) :: HOTSTART_INTV,HOTSTART_COUNT$/;"	v	module:GLOBAL
+HOTSTART_INTV	mod_global.F	/^       REAL(SP) :: HOTSTART_INTV,/;"	v	module:GLOBAL
+HOT_START	mod_global.F	/^       LOGICAL :: OBSTACLE=.FALSE., HOT_START=/;"	v	module:GLOBAL
+HU	mod_global.F	/^          Fx,Fy,HU,/;"	v	module:GLOBAL
+HUV_BAR_KERNEL	etauv_solver_gpu.F	/^ATTRIBUTES(GLOBAL) SUBROUTINE HUV_BAR_KERNEL&/;"	s	module:etauv_solver_module
+HUxL	mod_global.F	/^          UxL,UxR,VxL,VxR,&$/;"	v	module:GLOBAL
+HUxR	mod_global.F	/^          HUxL,HUxR,/;"	v	module:GLOBAL
+HUyL	mod_global.F	/^          HUxL,HUxR,HUyL,/;"	v	module:GLOBAL
+HUyR	mod_global.F	/^          HUxL,HUxR,HUyL,HUyR,/;"	v	module:GLOBAL
+HV	mod_global.F	/^          Fx,Fy,HU,HV,/;"	v	module:GLOBAL
+HVxL	mod_global.F	/^          UyL,UyR,VyL,VyR,&$/;"	v	module:GLOBAL
+HVxR	mod_global.F	/^          HVxL,HVxR,/;"	v	module:GLOBAL
+HVyL	mod_global.F	/^          HVxL,HVxR,HVyL,/;"	v	module:GLOBAL
+HVyR	mod_global.F	/^          HVxL,HVxR,HVyL,HVyR,/;"	v	module:GLOBAL
+HavgSum	mod_global.F	/^                HrmsSum,HavgSum$/;"	v	module:GLOBAL
+HeightMax	mod_global.F	/^          tmp4preview,HeightMax,/;"	v	module:GLOBAL
+HeightMin	mod_global.F	/^          tmp4preview,HeightMax,HeightMin,/;"	v	module:GLOBAL
+Hmo	mod_global.F	/^        REAL(SP) :: FreqMin,FreqMax,FreqPeak,GammaTMA,Hmo,/;"	v	module:GLOBAL
+Holland_Model_Forcing	mod_meteo.F	/^SUBROUTINE Holland_Model_Forcing$/;"	s	module:METEO_MODULE
+Holland_Model_Setup	mod_meteo.F	/^SUBROUTINE Holland_Model_Setup$/;"	s	module:METEO_MODULE
+HotStartTime	mod_global.F	/^       REAL(SP) :: HotStartTime$/;"	v	module:GLOBAL
+Hpo	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::Hpo,/;"	v	module:SEDIMENT_MODULE
+HrmsSum	mod_global.F	/^                WaveHeightRMS,WaveHeightAve,Emax,Emin,& $/;"	v	module:GLOBAL
+HxL	mod_global.F	/^          HUxL,HUxR,HUyL,HUyR,HxL,/;"	v	module:GLOBAL
+HxR	mod_global.F	/^          HUxL,HUxR,HUyL,HUyR,HxL,HxR,/;"	v	module:GLOBAL
+HyL	mod_global.F	/^          HVxL,HVxR,HVyL,HVyR,HyL,/;"	v	module:GLOBAL
+HyR	mod_global.F	/^          HVxL,HVxR,HVyL,HVyR,HyL,HyR,/;"	v	module:GLOBAL
+I	exchange_gpu.F	/^    integer :: I,/;"	v
+I	mod_param.F	/^       IN/;"	v	module:PARAM
+II	bc.F	/^    INTEGER :: nreq,len,ll,l,II,/;"	v
+II	exchange_gpu.F	/^    INTEGER :: len,II,/;"	v
+II	mod_tracer.F	/^     INTEGER :: II,/;"	v	module:TRACER
+INDEX	misc.F	/^SUBROUTINE INDEX$/;"	s
+INITIALIZATION	init.F	/^SUBROUTINE INITIALIZATION$/;"	s
+INITIALIZATION_GPU	init_gpu.F	/^SUBROUTINE INITIALIZATION_GPU$/;"	s	module:init_gpu
+INITIAL_DIPOLE	samples.F	/^SUBROUTINE INITIAL_DIPOLE(/;"	s
+INITIAL_GAUSIAN	samples.F	/^SUBROUTINE INITIAL_GAUSIAN(/;"	s
+INITIAL_N_WAVE	samples.F	/^SUBROUTINE INITIAL_N_WAVE(/;"	s
+INITIAL_RECTANGULAR	samples.F	/^SUBROUTINE INITIAL_RECTANGULAR(/;"	s
+INITIAL_SOLITARY_WAVE	samples.F	/^SUBROUTINE INITIAL_SOLITARY_WAVE(/;"	s
+INITIAL_UVZ	init.F	/^SUBROUTINE INITIAL_UVZ$/;"	s
+INITIAL_WAVE	samples.F	/^SUBROUTINE INITIAL_WAVE$/;"	s
+INI_UVZ	mod_global.F	/^        LOGICAL :: INI_UVZ=/;"	v	module:GLOBAL
+INPUT_READ	mod_input.F	/^MODULE INPUT_READ$/;"	m
+IN_CELL	mod_tracer.F	/^     LOGICAL,SAVE,DIMENSION(:),ALLOCATABLE :: IN_CELL,/;"	v	module:TRACER
+IN_Cd	mod_global.F	/^        LOGICAL :: IN_Cd=/;"	v	module:GLOBAL
+IN_DOMAIN_EAST	mod_global.F	/^       LOGICAL :: IN_DOMAIN_EAST,/;"	v	module:GLOBAL
+IN_DOMAIN_NORTH	mod_global.F	/^                  IN_DOMAIN_SOUTH,IN_DOMAIN_NORTH$/;"	v	module:GLOBAL
+IN_DOMAIN_SOUTH	mod_global.F	/^       LOGICAL :: IN_DOMAIN_EAST,IN_DOMAIN_WEST,&$/;"	v	module:GLOBAL
+IN_DOMAIN_WEST	mod_global.F	/^       LOGICAL :: IN_DOMAIN_EAST,IN_DOMAIN_WEST,/;"	v	module:GLOBAL
+IN_Mask_s	mod_sediment.F	/^    LOGICAL :: IN_Mask_s=/;"	v	module:SEDIMENT_MODULE
+IRREGULAR_LEFT_BC	wavemaker.F	/^SUBROUTINE IRREGULAR_LEFT_BC$/;"	s
+ISTAGE	mod_global.F	/^       INTEGER :: ISTAGE$/;"	v	module:GLOBAL
+ITER_NUM	mod_param.F	/^       INTEGER :: ITER_NUM /;"	v	module:PARAM
+I_START_NORTH	mod_global.F	/^                  I_START_SOUTH,&$/;"	v	module:GLOBAL
+I_START_SOUTH	mod_global.F	/^                  J_START_WEST,&$/;"	v	module:GLOBAL
+Ibeg	bc.F	/^    INTEGER,INTENT(IN) :: Mloc,Nloc,Ibeg,/;"	v
+Ibeg	exchange_gpu.F	/^    INTEGER,INTENT(IN) :: Mloc,Nloc,Ibeg,/;"	v
+Ibeg	fluxes.F	/^     INTEGER,INTENT(IN) :: M,N,M1,Ibeg,/;"	v
+Ibeg	mod_global.F	/^       INTEGER :: Ibeg,/;"	v	module:GLOBAL
+Iend	bc.F	/^    INTEGER,INTENT(IN) :: Mloc,Nloc,Ibeg,Iend,/;"	v
+Iend	exchange_gpu.F	/^    INTEGER,INTENT(IN) :: Mloc,Nloc,Ibeg,Iend,/;"	v
+Iend	fluxes.F	/^     INTEGER,INTENT(IN) :: M,N,M1,Ibeg,Iend,/;"	v
+Iend	mod_global.F	/^       INTEGER :: Ibeg,Iend,/;"	v	module:GLOBAL
+Iend1	mod_global.F	/^       INTEGER :: Ibeg,Iend,Jbeg,Jend,Iend1,/;"	v	module:GLOBAL
+Il	samples.F	/^     INTEGER :: Il,/;"	v
+Int2Flo	mod_global.F	/^          Gx,Gy,P,Q,SourceX,SourceY,Int2Flo,/;"	v	module:GLOBAL
+Ir	samples.F	/^     INTEGER :: Il,Jl,Ir,/;"	v
+J	exchange_gpu.F	/^    integer :: I,J,/;"	v
+J	mod_param.F	/^       INTEGER :: I,J,/;"	v	module:PARAM
+JJ	bc.F	/^    INTEGER :: nreq,len,ll,l,II,JJ$/;"	v
+JJ	exchange_gpu.F	/^    INTEGER :: len,II,JJ$/;"	v
+JJ	mod_tracer.F	/^     INTEGER :: II,JJ$/;"	v	module:TRACER
+J_START_EAST	mod_global.F	/^                  N_COUPLING_DATA,&$/;"	v	module:GLOBAL
+J_START_WEST	mod_global.F	/^                  J_START_EAST,&$/;"	v	module:GLOBAL
+Jbeg	bc.F	/^    INTEGER,INTENT(IN) :: Mloc,Nloc,Ibeg,Iend,Jbeg,/;"	v
+Jbeg	exchange_gpu.F	/^    INTEGER,INTENT(IN) :: Mloc,Nloc,Ibeg,Iend,Jbeg,/;"	v
+Jbeg	fluxes.F	/^     INTEGER,INTENT(IN) :: M,N,M1,Ibeg,Iend,Jbeg,/;"	v
+Jbeg	mod_global.F	/^       INTEGER :: Ibeg,Iend,Jbeg,/;"	v	module:GLOBAL
+Jend	bc.F	/^    INTEGER,INTENT(IN) :: Mloc,Nloc,Ibeg,Iend,Jbeg,Jend,/;"	v
+Jend	exchange_gpu.F	/^    INTEGER,INTENT(IN) :: Mloc,Nloc,Ibeg,Iend,Jbeg,Jend,/;"	v
+Jend	fluxes.F	/^     INTEGER,INTENT(IN) :: M,N,M1,Ibeg,Iend,Jbeg,Jend$/;"	v
+Jend	mod_global.F	/^       INTEGER :: Ibeg,Iend,Jbeg,Jend,/;"	v	module:GLOBAL
+Jend1	mod_global.F	/^       INTEGER :: Ibeg,Iend,Jbeg,Jend,Iend1,Jend1$/;"	v	module:GLOBAL
+Jl	samples.F	/^     INTEGER :: Il,Jl,/;"	v
+Jr	samples.F	/^     INTEGER :: Il,Jl,Ir,Jr$/;"	v
+K	exchange_gpu.F	/^    integer :: I,J,K$/;"	v
+K	mod_param.F	/^       INTEGER :: I,J,K,/;"	v	module:PARAM
+Kappa	mod_global.F	/^       REAL(SP)::Kappa /;"	v	module:GLOBAL
+Kappa1	mod_sediment.F	/^    REAL(SP) :: D50,Sdensity,n_porosity,DT1,Counter,WS,Kappa1,/;"	v	module:SEDIMENT_MODULE
+Kappa2	mod_sediment.F	/^    REAL(SP) :: D50,Sdensity,n_porosity,DT1,Counter,WS,Kappa1,Kappa2,/;"	v	module:SEDIMENT_MODULE
+Kend_EAST	mod_global.F	/^       INTEGER :: Kstart_EAST,Kend_EAST,/;"	v	module:GLOBAL
+Kend_NORTH	mod_global.F	/^                  Kstart_NORTH,Kend_NORTH,/;"	v	module:GLOBAL
+Kend_SOUTH	mod_global.F	/^                  Kstart_SOUTH,Kend_SOUTH,/;"	v	module:GLOBAL
+Kend_WEST	mod_global.F	/^                  Kstart_WEST,Kend_WEST,/;"	v	module:GLOBAL
+KernelTime	mod_cuda.F	/^    real(SP) :: KernelTime$/;"	v	module:mod_cuda
+KernelTimePrint	mod_cuda.F	/^subroutine KernelTimePrint$/;"	s	module:mod_cuda
+Ki	mod_global.F	/^       INTEGER :: Ki$/;"	v	module:GLOBAL
+Kshift_EAST	mod_global.F	/^       INTEGER :: Kstart_EAST,Kend_EAST,Kshift_EAST,/;"	v	module:GLOBAL
+Kshift_NORTH	mod_global.F	/^                  Kstart_NORTH,Kend_NORTH,Kshift_NORTH$/;"	v	module:GLOBAL
+Kshift_SOUTH	mod_global.F	/^                  Kstart_SOUTH,Kend_SOUTH,Kshift_SOUTH,/;"	v	module:GLOBAL
+Kshift_WEST	mod_global.F	/^                  Kstart_WEST,Kend_WEST,Kshift_WEST,/;"	v	module:GLOBAL
+Kstart_EAST	mod_global.F	/^       INTEGER :: Kstart_EAST,/;"	v	module:GLOBAL
+Kstart_NORTH	mod_global.F	/^                  Kstart_SOUTH,Kend_SOUTH,Kshift_SOUTH,&$/;"	v	module:GLOBAL
+Kstart_SOUTH	mod_global.F	/^                  Kstart_WEST,Kend_WEST,Kshift_WEST,&$/;"	v	module:GLOBAL
+Kstart_WEST	mod_global.F	/^       INTEGER :: Kstart_EAST,Kend_EAST,Kshift_EAST,&$/;"	v	module:GLOBAL
+Kves	mod_vessel.F	/^    INTEGER :: NumVessel,Kves$/;"	v	module:VESSEL_MODULE
+LAG_SOLI	mod_global.F	/^        REAL(SP)::AMP_SOLI,DEP_SOLI,LAG_SOLI,/;"	v	module:GLOBAL
+LARGE	mod_param.F	/^       REAL(SP), PARAMETER::LARGE=/;"	v	module:PARAM
+LAYER_012	mod_tracer.F	/^     INTEGER,SAVE,DIMENSION(:),ALLOCATABLE :: LAYER_012$/;"	v	module:TRACER
+Lat_South	mod_global.F	/^       REAL(SP) :: Lon_West,Lat_South,/;"	v	module:GLOBAL
+Lat_South	samples.F	/^     REAL(SP),INTENT(IN) :: Xc,Yc,WID,AMP,Lon_West,Lat_South,/;"	v
+Lat_theta	mod_global.F	/^          Dx,Dy, Coriolis,Lat_theta,/;"	v	module:GLOBAL
+LengthSlide	mod_meteo.F	/^    REAL(SP) :: LengthSlide,/;"	v	module:METEO_MODULE
+LengthVessel	mod_vessel.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE :: Xvessel1,Yvessel1,Xvessel2,Yvessel2, &$/;"	v	module:VESSEL_MODULE
+Lon_West	mod_global.F	/^       REAL(SP) :: Lon_West,/;"	v	module:GLOBAL
+Lon_West	samples.F	/^     REAL(SP),INTENT(IN) :: Xc,Yc,WID,AMP,Lon_West,/;"	v
+M	fluxes.F	/^     INTEGER,INTENT(IN) :: M,/;"	v
+M	samples.F	/^     INTEGER,INTENT(IN) :: M,/;"	v
+M1	fluxes.F	/^     INTEGER,INTENT(IN) :: M,N,M1,/;"	v
+MAIN	Makefile	/^MAIN  = main.F bc.F fluxes.F init.F io.F tridiagnal.F       \\$/;"	m
+MASK	fluxes.F	/^     INTEGER,INTENT(IN),DIMENSION(M,N) :: MASK$/;"	v
+MASK0	mod_bathy_correction.F	/^    INTEGER,DIMENSION(:,:),ALLOCATABLE :: MASK0$/;"	v	module:BATHY_CORRECTION_MODULE
+MASK9	mod_global.F	/^        INTEGER,DIMENSION(:,:),ALLOCATABLE :: MASK_STRUC,MASK9$/;"	v	module:GLOBAL
+MASK_FILE	mod_global.F	/^       CHARACTER(LEN=80) MASK_FILE$/;"	v	module:GLOBAL
+MASK_STRUC	mod_global.F	/^        INTEGER,DIMENSION(:,:),ALLOCATABLE :: MASK_STRUC,/;"	v	module:GLOBAL
+MASK_WIND	mod_meteo.F	/^       INTEGER,DIMENSION(:,:),ALLOCATABLE :: MASK_WIND /;"	v	module:METEO_MODULE
+MAX_MIN_PROPERTY	misc.F	/^SUBROUTINE MAX_MIN_PROPERTY$/;"	s
+MAX_SLOPE	mod_global.F	/^       REAL(SP) :: MAX_SLOPE$/;"	v	module:GLOBAL
+MDEPFLAGS	Makefile	/^         MDEPFLAGS = --cpp --fext=f90 --file=-$/;"	m
+METEO_FORCING	mod_meteo.F	/^SUBROUTINE METEO_FORCING$/;"	s	module:METEO_MODULE
+METEO_INITIAL	mod_meteo.F	/^SUBROUTINE METEO_INITIAL$/;"	s	module:METEO_MODULE
+METEO_MODULE	mod_meteo.F	/^MODULE METEO_MODULE$/;"	m
+MINMOD_LIMITER	fluxes.F	/^FUNCTION MINMOD_LIMITER(/;"	f
+MIXING_STUFF	mixing.F	/^SUBROUTINE MIXING_STUFF$/;"	s
+MIXING_STUFF_GPU	mixing_gpu.F	/^SUBROUTINE MIXING_STUFF_GPU$/;"	s	module:calculate_mean_module
+MODS	Makefile	/^MODS  = mod_param.F mod_global.F mod_input.F mod_vessel.F mod_bathy_correction.F \\$/;"	m
+MORPHOLOGICAL_CHANGE	mod_sediment.F	/^SUBROUTINE MORPHOLOGICAL_CHANGE$/;"	s	module:SEDIMENT_MODULE
+MOVE_TRACER	mod_tracer.F	/^SUBROUTINE MOVE_TRACER$/;"	s	module:TRACER
+MPI_SP	mod_param.F	/^       INTEGER, PARAMETER::MPI_SP=/;"	v	module:PARAM
+MakeVesselDraft	mod_vessel.F	/^    LOGICAL :: MakeVesselDraft /;"	v	module:VESSEL_MODULE
+Mask_s	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::Zb,P_ave,D_ave,Mask_s,/;"	v	module:SEDIMENT_MODULE
+Mask_s_FILE	mod_sediment.F	/^    CHARACTER(LEN=80) Mask_s_FILE$/;"	v	module:SEDIMENT_MODULE
+MeteoGausian	mod_meteo.F	/^       LOGICAL :: MeteoGausian /;"	v	module:METEO_MODULE
+MeteoGausian_Forcing	mod_meteo.F	/^SUBROUTINE MeteoGausian_Forcing$/;"	s	module:METEO_MODULE
+MeteoGausian_Setup	mod_meteo.F	/^SUBROUTINE MeteoGausian_Setup$/;"	s	module:METEO_MODULE
+Mglob	mod_global.F	/^       INTEGER :: Mglob,/;"	v	module:GLOBAL
+MinDepth	mod_global.F	/^       REAL(SP) :: MinDepth=/;"	v	module:GLOBAL
+MinDepthFrc	mod_global.F	/^       REAL(SP) :: MinDepthFrc=/;"	v	module:GLOBAL
+MinDepthPickup	mod_sediment.F	/^    REAL(SP) :: D50,Sdensity,n_porosity,DT1,Counter,WS,Kappa1,Kappa2, &$/;"	v	module:SEDIMENT_MODULE
+Mloc	bc.F	/^    INTEGER,INTENT(IN) :: Mloc,/;"	v
+Mloc	exchange_gpu.F	/^    INTEGER,INTENT(IN) :: Mloc,/;"	v
+Mloc	mod_global.F	/^       INTEGER :: Mglob,Nglob,Mloc,/;"	v	module:GLOBAL
+Mloc1	mod_global.F	/^       INTEGER :: Mglob,Nglob,Mloc,Nloc,Mloc1,/;"	v	module:GLOBAL
+MomentumFluxMax	mod_global.F	/^          tmp4preview,HeightMax,HeightMin,VelocityMax,&$/;"	v	module:GLOBAL
+Morph_step	mod_sediment.F	/^    INTEGER :: Morph_step,/;"	v	module:SEDIMENT_MODULE
+N	fluxes.F	/^     INT/;"	v
+N	samples.F	/^     INT/;"	v
+NO_MASK_FILE	mod_global.F	/^       LOGICAL :: NO_MASK_FILE /;"	v	module:GLOBAL
+NO_UV_FILE	mod_global.F	/^       LOGICAL :: NO_UV_FILE /;"	v	module:GLOBAL
+N_COUPLING_DATA	mod_global.F	/^                  N_COUPLING_NORTH,&$/;"	v	module:GLOBAL
+N_COUPLING_EAST	mod_global.F	/^       INTEGER :: N_COUPLING_EAST,/;"	v	module:GLOBAL
+N_COUPLING_NORTH	mod_global.F	/^                  N_COUPLING_SOUTH,&$/;"	v	module:GLOBAL
+N_COUPLING_SOUTH	mod_global.F	/^                  N_COUPLING_WEST,&$/;"	v	module:GLOBAL
+N_COUPLING_WEST	mod_global.F	/^       INTEGER :: N_COUPLING_EAST,&$/;"	v	module:GLOBAL
+Nfreq	mod_global.F	/^        INTEGER :: Nfreq,/;"	v	module:GLOBAL
+Nghost	bc.F	/^    INTEGER,INTENT(IN) :: Mloc,Nloc,Ibeg,Iend,Jbeg,Jend,Nghost$/;"	v
+Nghost	exchange_gpu.F	/^    INTEGER,INTENT(IN) :: Mloc,Nloc,Ibeg,Iend,Jbeg,Jend,Nghost$/;"	v
+Nghost	mod_global.F	/^       INTEGER, PARAMETER :: Nghost /;"	v	module:GLOBAL
+Nghost	samples.F	/^     INTEGER,INTENT(IN) :: M,N,Nghost$/;"	v
+Nglob	mod_global.F	/^       INTEGER :: Mglob,Nglob,/;"	v	module:GLOBAL
+Nloc	bc.F	/^    INTEGER,INTENT(IN) :: Mloc,Nloc,/;"	v
+Nloc	exchange_gpu.F	/^    INTEGER,INTENT(IN) :: Mloc,Nloc,/;"	v
+Nloc	mod_global.F	/^       INTEGER :: Mglob,Nglob,Mloc,Nloc,/;"	v	module:GLOBAL
+Nloc1	mod_global.F	/^       INTEGER :: Mglob,Nglob,Mloc,Nloc,Mloc1,Nloc1$/;"	v	module:GLOBAL
+Ntheta	mod_global.F	/^        INTEGER :: Nfreq,Ntheta /;"	v	module:GLOBAL
+NumDir	mod_global.F	/^       INTEGER :: NumWaveComp,NumFreq,NumDir$/;"	v	module:GLOBAL
+NumFreq	mod_global.F	/^       INTEGER :: NumWaveComp,NumFreq,/;"	v	module:GLOBAL
+NumTimeWindData	mod_meteo.F	/^       INTEGER :: NumTimeWindData$/;"	v	module:METEO_MODULE
+NumTracker	mod_tracer.F	/^     INTEGER,SAVE :: NumTracker=/;"	v	module:TRACER
+NumVessel	mod_vessel.F	/^    INTEGER :: NumVessel,/;"	v	module:VESSEL_MODULE
+NumWaveComp	mod_global.F	/^       INTEGER :: NumWaveComp,/;"	v	module:GLOBAL
+Num_Zero_Up	mod_global.F	/^      INTEGER, DIMENSION(:,:),ALLOCATABLE :: Num_Zero_Up$/;"	v	module:GLOBAL
+NumberProcessor	mod_global.F	/^       INTEGER :: NumberProcessor$/;"	v	module:GLOBAL
+NumberStations	mod_global.F	/^       INTEGER :: NumberStations$/;"	v	module:GLOBAL
+OBJS	Makefile	/^OBJS = $(SRCS:.F=.o)$/;"	m
+OBSTACLE	mod_global.F	/^       LOGICAL :: OBSTACLE=/;"	v	module:GLOBAL
+OBSTACLE_FILE	mod_global.F	/^       CHARACTER(LEN=80) OBSTACLE_FILE$/;"	v	module:GLOBAL
+OPT	Makefile	/^         OPT      = -Mcuda -Mcudalib=cusparse$/;"	m
+OUTPUT	io.F	/^SUBROUTINE OUTPUT$/;"	s
+OUTPUT_CORRECTION	mod_bathy_correction.F	/^SUBROUTINE OUTPUT_CORRECTION$/;"	s	module:BATHY_CORRECTION_MODULE
+OUTPUT_RES	mod_global.F	/^       INTEGER :: OUTPUT_RES /;"	v	module:GLOBAL
+OUTPUT_SEDIMENT	io.F	/^SUBROUTINE OUTPUT_SEDIMENT$/;"	s
+OUTPUT_TRACKING	mod_tracer.F	/^SUBROUTINE OUTPUT_TRACKING$/;"	s	module:TRACER
+OUTPUT_VESSEL	io.F	/^SUBROUTINE OUTPUT_VESSEL$/;"	s
+OUT_AGE	mod_global.F	/^                  OUT_TMP=.FALSE., OUT_AGE=/;"	v	module:GLOBAL
+OUT_DEPTH	mod_global.F	/^                  OUT_MASK9=.FALSE., OUT_DEPTH=/;"	v	module:GLOBAL
+OUT_ETA	mod_global.F	/^       LOGICAL :: OUT_U=.FALSE., OUT_V=.FALSE.,OUT_ETA=/;"	v	module:GLOBAL
+OUT_ETAmean	mod_global.F	/^       LOGICAL :: OUT_Umean=.FALSE.,OUT_Vmean=.FALSE.,&$/;"	v	module:GLOBAL
+OUT_Fx	mod_global.F	/^                  OUT_P=.FALSE., OUT_Q=.FALSE., &$/;"	v	module:GLOBAL
+OUT_Fy	mod_global.F	/^                  OUT_Fx=.FALSE., OUT_Fy=/;"	v	module:GLOBAL
+OUT_Gx	mod_global.F	/^                  OUT_Fx=.FALSE., OUT_Fy=.FALSE.,&$/;"	v	module:GLOBAL
+OUT_Gy	mod_global.F	/^                  OUT_Gx=.FALSE., OUT_Gy=/;"	v	module:GLOBAL
+OUT_Hmax	mod_global.F	/^                  OUT_TMP=.FALSE., OUT_AGE=.FALSE.,OUT_NU=.FALSE., &$/;"	v	module:GLOBAL
+OUT_Hmin	mod_global.F	/^                  OUT_Hmax=.FALSE., &$/;"	v	module:GLOBAL
+OUT_MASK	mod_global.F	/^       LOGICAL :: OUT_U=.FALSE., OUT_V=.FALSE.,OUT_ETA=.FALSE., &$/;"	v	module:GLOBAL
+OUT_MASK9	mod_global.F	/^                  OUT_Gx=.FALSE., OUT_Gy=.FALSE.,&$/;"	v	module:GLOBAL
+OUT_METEO	mod_meteo.F	/^    LOGICAL :: OUT_METEO /;"	v	module:METEO_MODULE
+OUT_MFmax	mod_global.F	/^       LOGICAL :: OUT_MFmax=/;"	v	module:GLOBAL
+OUT_NU	mod_global.F	/^                  OUT_TMP=.FALSE., OUT_AGE=.FALSE.,OUT_NU=/;"	v	module:GLOBAL
+OUT_P	mod_global.F	/^                  OUT_SourceX=.FALSE., OUT_SourceY=.FALSE., &$/;"	v	module:GLOBAL
+OUT_Q	mod_global.F	/^                  OUT_P=.FALSE., OUT_Q=/;"	v	module:GLOBAL
+OUT_SXL	mod_global.F	/^                  OUT_MASK=.FALSE.,OUT_SXL=/;"	v	module:GLOBAL
+OUT_SXR	mod_global.F	/^                  OUT_MASK=.FALSE.,OUT_SXL=.FALSE.,OUT_SXR=/;"	v	module:GLOBAL
+OUT_SYL	mod_global.F	/^                  OUT_MASK=.FALSE.,OUT_SXL=.FALSE.,OUT_SXR=.FALSE.,&$/;"	v	module:GLOBAL
+OUT_SYR	mod_global.F	/^                  OUT_SYL=.FALSE., OUT_SYR=/;"	v	module:GLOBAL
+OUT_SourceX	mod_global.F	/^                  OUT_SYL=.FALSE., OUT_SYR=.FALSE.,&$/;"	v	module:GLOBAL
+OUT_SourceY	mod_global.F	/^                  OUT_SourceX=.FALSE., OUT_SourceY=/;"	v	module:GLOBAL
+OUT_TMP	mod_global.F	/^                  OUT_MASK9=.FALSE., OUT_DEPTH=.FALSE., &$/;"	v	module:GLOBAL
+OUT_U	mod_global.F	/^       LOGICAL :: OUT_U=/;"	v	module:GLOBAL
+OUT_Umax	mod_global.F	/^                  OUT_Hmin=.FALSE., &$/;"	v	module:GLOBAL
+OUT_Umean	mod_global.F	/^       LOGICAL :: OUT_Umean=/;"	v	module:GLOBAL
+OUT_V	mod_global.F	/^       LOGICAL :: OUT_U=.FALSE., OUT_V=/;"	v	module:GLOBAL
+OUT_VESSEL	mod_vessel.F	/^    LOGICAL :: OUT_VESSEL /;"	v	module:VESSEL_MODULE
+OUT_VORmax	mod_global.F	/^       LOGICAL :: OUT_MFmax=.FALSE., &$/;"	v	module:GLOBAL
+OUT_Vmean	mod_global.F	/^       LOGICAL :: OUT_Umean=.FALSE.,OUT_Vmean=/;"	v	module:GLOBAL
+OUT_WaveHeight	mod_global.F	/^                  OUT_ETAmean=.FALSE.,&$/;"	v	module:GLOBAL
+OUT_WaveHeightSig	mod_global.F	/^                  OUT_WaveHeight = .FALSE.,&$/;"	v	module:GLOBAL
+OneWayCoupling	nesting.F	/^SUBROUTINE OneWayCoupling$/;"	s
+OutL	fluxes.F	/^     REAL(SP),INTENT(OUT),DIMENSION(M1,N) :: OutL,/;"	v
+OutR	fluxes.F	/^     REAL(SP),INTENT(OUT),DIMENSION(M1,N) :: OutL,OutR$/;"	v
+P	mod_global.F	/^          Gx,Gy,P,/;"	v	module:GLOBAL
+PARALLEL_FIELD_IO	mod_parallel_field_io.F	/^MODULE PARALLEL_FIELD_IO$/;"	m
+PARAM	mod_param.F	/^MODULE PARAM /;"	m
+PERIODIC	bc.F	/^    LOGICAL :: PERIODIC$/;"	v
+PERIODIC	exchange_gpu.F	/^    LOGICAL :: PERIODIC$/;"	v
+PERIODIC	mod_global.F	/^       LOGICAL :: PERIODIC=/;"	v	module:GLOBAL
+PHI	bc.F	/^    REAL(SP),INTENT(INOUT) :: PHI(/;"	v
+PHI_COLL	bc.F	/^SUBROUTINE PHI_COLL(/;"	s
+PHI_COLL_GPU	exchange_gpu.F	/^SUBROUTINE PHI_COLL_GPU(/;"	s	module:boundary_condition_module
+PHI_COLL_INT_GPU	exchange_gpu.F	/^SUBROUTINE PHI_COLL_INT_GPU(/;"	s
+PHI_COLL_VARIABLE_LENGTH	bc.F	/^SUBROUTINE PHI_COLL_VARIABLE_LENGTH(/;"	s
+PHI_COLL_VARIABLE_LENGTH_GPU	exchange_gpu.F	/^SUBROUTINE PHI_COLL_VARIABLE_LENGTH_GPU(/;"	s	module:boundary_condition_module
+PL	mod_global.F	/^          EtaRyL,EtaRyR, &$/;"	v	module:GLOBAL
+PLOT_COUNT	mod_global.F	/^       REAL(SP)::  DT,TIME,TOTAL_TIME,PLOT_INTV,PLOT_COUNT,/;"	v	module:GLOBAL
+PLOT_COUNT_SEDIMENT	mod_sediment.F	/^    REAL(SP):: PLOT_INTV_SEDIMENT,PLOT_COUNT_SEDIMENT$/;"	v	module:SEDIMENT_MODULE
+PLOT_COUNT_STATION	mod_global.F	/^       REAL(SP):: PLOT_INTV_STATION,PLOT_COUNT_STATION$/;"	v	module:GLOBAL
+PLOT_COUNT_TRACKING	mod_tracer.F	/^     REAL(SP), SAVE :: PLOT_INTV_TRACKING,PLOT_COUNT_TRACKING$/;"	v	module:TRACER
+PLOT_COUNT_VESSEL	mod_vessel.F	/^    REAL(SP):: PLOT_INTV_VESSEL,PLOT_COUNT_VESSEL$/;"	v	module:VESSEL_MODULE
+PLOT_INTV	mod_global.F	/^       REAL(SP)::  DT,TIME,TOTAL_TIME,PLOT_INTV,/;"	v	module:GLOBAL
+PLOT_INTV_SEDIMENT	mod_sediment.F	/^    REAL(SP):: PLOT_INTV_SEDIMENT,/;"	v	module:SEDIMENT_MODULE
+PLOT_INTV_STATION	mod_global.F	/^       REAL(SP):: PLOT_INTV_STATION,/;"	v	module:GLOBAL
+PLOT_INTV_TRACKING	mod_tracer.F	/^     REAL(SP), SAVE :: PLOT_INTV_TRACKING,/;"	v	module:TRACER
+PLOT_INTV_VESSEL	mod_vessel.F	/^    REAL(SP):: PLOT_INTV_VESSEL,/;"	v	module:VESSEL_MODULE
+PR	mod_global.F	/^          PL,PR,/;"	v	module:GLOBAL
+PREVIEW	io.F	/^SUBROUTINE PREVIEW$/;"	s
+PREVIEW_MEAN	io.F	/^SUBROUTINE PREVIEW_MEAN$/;"	s
+PSlide	mod_meteo.F	/^    REAL(SP) :: LengthSlide,WidthSlide,AlphaSlide,BetaSlide,PSlide,/;"	v	module:METEO_MODULE
+P_ave	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::Zb,P_ave,/;"	v	module:SEDIMENT_MODULE
+Pc_storm1	mod_meteo.F	/^                Pn_storm1, Pc_storm1,/;"	v	module:METEO_MODULE
+Pc_storm2	mod_meteo.F	/^                Pn_storm2, Pc_storm2,/;"	v	module:METEO_MODULE
+PeakPeriod	mod_global.F	/^       REAL(SP) :: PeakPeriod$/;"	v	module:GLOBAL
+Per_Ser	mod_global.F	/^       REAL(SP),DIMENSION(:),ALLOCATABLE :: Per_Ser,/;"	v	module:GLOBAL
+Phase2D	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Beta_gen2D,D_gen2D,rlamda2D, &$/;"	v	module:GLOBAL
+Phase_LEFT	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Amp_Ser,Phase_LEFT$/;"	v	module:GLOBAL
+Phase_Ser	mod_global.F	/^       REAL(SP),DIMENSION(:),ALLOCATABLE :: Per_Ser,Phase_Ser,/;"	v	module:GLOBAL
+Pickup	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::Zb,P_ave,D_ave,Mask_s,D,Pickup,/;"	v	module:SEDIMENT_MODULE
+Pn_storm1	mod_meteo.F	/^    REAL(SP) :: Xstorm1,Ystorm1,Xstorm2,Ystorm2, &$/;"	v	module:METEO_MODULE
+Pn_storm2	mod_meteo.F	/^                Pn_storm1, Pc_storm1,A_storm1,B_storm1, &$/;"	v	module:METEO_MODULE
+ProcessorID	mod_global.F	/^       INTEGER,DIMENSION(:,:),ALLOCATABLE :: ProcessorID /;"	v	module:GLOBAL
+PutFile	io.F	/^SUBROUTINE PutFile(/;"	s
+PutFileASCII	mod_parallel_field_io.F	/^SUBROUTINE PutFileASCII(/;"	s	module:PARALLEL_FIELD_IO
+PutFileBinary	mod_parallel_field_io.F	/^SUBROUTINE PutFileBinary(/;"	s	module:PARALLEL_FIELD_IO
+Pvessel	mod_vessel.F	/^                                       AlphaVessel,BetaVessel,Pvessel,/;"	v	module:VESSEL_MODULE
+Q	mod_global.F	/^          Gx,Gy,P,Q,/;"	v	module:GLOBAL
+QL	mod_global.F	/^          PL,PR,QL,/;"	v	module:GLOBAL
+QR	mod_global.F	/^          PL,PR,QL,QR,/;"	v	module:GLOBAL
+RANLIB	Makefile	/^         RANLIB = ranlib$/;"	m
+RAT	fluxes.F	/^     REAL(SP) :: VAN1, VAN2, RAT$/;"	v
+READ_FLOAT	mod_input.F	/^  SUBROUTINE READ_FLOAT(/;"	s	module:INPUT_READ
+READ_INPUT	io.F	/^SUBROUTINE READ_INPUT$/;"	s
+READ_INTEGER	mod_input.F	/^SUBROUTINE READ_INTEGER(/;"	s	module:INPUT_READ
+READ_LOGICAL	mod_input.F	/^  SUBROUTINE READ_LOGICAL(/;"	s	module:INPUT_READ
+READ_STRING	mod_input.F	/^  SUBROUTINE READ_STRING(/;"	s	module:INPUT_READ
+READ_VALUE	mod_input.F	/^  SUBROUTINE READ_VALUE(/;"	s	module:INPUT_READ
+RES	mod_param.F	/^       INTEGER :: I,J,K, RES$/;"	v	module:PARAM
+RESULT_FOLDER	mod_global.F	/^       CHARACTER(LEN=80) RESULT_FOLDER$/;"	v	module:GLOBAL
+RHO_AIR	mod_param.F	/^       REAL(SP), PARAMETER:: RHO_AIR /;"	v	module:PARAM
+RHO_AW	mod_param.F	/^       REAL(SP), PARAMETER:: RHO_AW /;"	v	module:PARAM
+RHO_WATER	mod_param.F	/^       REAL(SP), PARAMETER:: RHO_WATER /;"	v	module:PARAM
+R_earth	mod_param.F	/^       REAL(SP), PARAMETER::R_earth /;"	v	module:PARAM
+R_sponge	mod_global.F	/^                  Sponge_south_width,Sponge_north_width, &$/;"	v	module:GLOBAL
+R_sponge_wavemaker	mod_global.F	/^       REAL(SP) :: Dep_Ser,WidthWaveMaker,&$/;"	v	module:GLOBAL
+ReadType	mod_global.F	/^       CHARACTER(LEN=80) ReadType$/;"	v	module:GLOBAL
+ResNegX	mod_vessel.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE :: ResistanceX,ResistanceY,ResPosX,ResNegX,/;"	v	module:VESSEL_MODULE
+ResNegY	mod_vessel.F	/^                                         ResPosY,ResNegY$/;"	v	module:VESSEL_MODULE
+ResPosX	mod_vessel.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE :: ResistanceX,ResistanceY,ResPosX,/;"	v	module:VESSEL_MODULE
+ResPosY	mod_vessel.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE :: ResistanceX,ResistanceY,ResPosX,ResNegX, &$/;"	v	module:VESSEL_MODULE
+ResistanceX	mod_vessel.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE :: ResistanceX,/;"	v	module:VESSEL_MODULE
+ResistanceY	mod_vessel.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE :: ResistanceX,ResistanceY,/;"	v	module:VESSEL_MODULE
+S1	mod_tracer.F	/^     REAL(SP),SAVE,DIMENSION(:),ALLOCATABLE :: X_TRACK,Y_TRACK,Sc,S1,/;"	v	module:TRACER
+S1_pre	mod_tracer.F	/^                   Sc_pre,S1_pre,/;"	v	module:TRACER
+S2	mod_tracer.F	/^     REAL(SP),SAVE,DIMENSION(:),ALLOCATABLE :: X_TRACK,Y_TRACK,Sc,S1,S2,/;"	v	module:TRACER
+S2_pre	mod_tracer.F	/^                   Sc_pre,S1_pre,S2_pre,/;"	v	module:TRACER
+S3	mod_tracer.F	/^     REAL(SP),SAVE,DIMENSION(:),ALLOCATABLE :: X_TRACK,Y_TRACK,Sc,S1,S2,S3,/;"	v	module:TRACER
+S3_pre	mod_tracer.F	/^                   Sc_pre,S1_pre,S2_pre,S3_pre$/;"	v	module:TRACER
+SCREEN_COUNT	mod_global.F	/^                  SCREEN_INTV,SCREEN_COUNT,/;"	v	module:GLOBAL
+SCREEN_INTV	mod_global.F	/^       REAL(SP)::  DT,TIME,TOTAL_TIME,PLOT_INTV,PLOT_COUNT,&$/;"	v	module:GLOBAL
+SEDIMENT_ADVECTION_DIFFUSION	mod_sediment.F	/^SUBROUTINE SEDIMENT_ADVECTION_DIFFUSION(/;"	s	module:SEDIMENT_MODULE
+SEDIMENT_INITIAL	mod_sediment.F	/^SUBROUTINE SEDIMENT_INITIAL$/;"	s	module:SEDIMENT_MODULE
+SEDIMENT_MODULE	mod_sediment.F	/^MODULE SEDIMENT_MODULE$/;"	m
+SHAPIRO_3	misc.F	/^SUBROUTINE SHAPIRO_3(/;"	s
+SHELL	Makefile	/^            SHELL         = \/bin\/sh$/;"	m
+SHOW_BREAKING	mod_global.F	/^       LOGICAL :: SHOW_BREAKING=/;"	v	module:GLOBAL
+SLOPE_CTR	mod_global.F	/^       LOGICAL :: SLOPE_CTR /;"	v	module:GLOBAL
+SLP	mod_global.F	/^       REAL(SP)::Depth_Flat, SLP,/;"	v	module:GLOBAL
+SMALL	mod_param.F	/^       REAL(SP), PARAMETER::SMALL=/;"	v	module:PARAM
+SOLITARY_WAVE_LEFT_BOUNDARY	samples.F	/^SUBROUTINE SOLITARY_WAVE_LEFT_BOUNDARY$/;"	s
+SP	mod_param.F	/^       INTEGER, PARAMETER::SP=/;"	v	module:PARAM
+SPONGE	mod_global.F	/^        REAL(SP),DIMENSION(:,:),ALLOCATABLE :: SPONGE,/;"	v	module:GLOBAL
+SPONGE_DAMPING	sponge.F	/^SUBROUTINE SPONGE_DAMPING$/;"	s
+SPONGE_DAMPING_GPU	sponge_gpu.F	/^SUBROUTINE SPONGE_DAMPING_GPU$/;"	s	module:sponge_module
+SPONGE_ON	mod_global.F	/^       LOGICAL :: SPONGE_ON=/;"	v	module:GLOBAL
+SRCS	Makefile	/^SRCS = $(MODS)  $(MAIN)$/;"	m
+STATIONS	io.F	/^SUBROUTINE STATIONS$/;"	s
+STATIONS_FILE	mod_global.F	/^       CHARACTER(LEN=80) STATIONS_FILE$/;"	v	module:GLOBAL
+STATIONS_SPHERICAL_IJ	io.F	/^SUBROUTINE STATIONS_SPHERICAL_IJ$/;"	s
+STATISTICS	statistics.F	/^SUBROUTINE STATISTICS$/;"	s
+STEADY_TIME	mod_global.F	/^	 REAL(SP) :: STEADY_TIME$/;"	v	module:GLOBAL
+STOP_SEARCH	mod_tracer.F	/^     LOGICAL,SAVE,DIMENSION(:),ALLOCATABLE :: IN_CELL,STOP_SEARCH$/;"	v	module:TRACER
+SUB_SLTRY	samples.F	/^SUBROUTINE SUB_SLTRY(/;"	s
+SWE_ETA_DEP	mod_global.F	/^       REAL(SP) :: SWE_ETA_DEP=/;"	v	module:GLOBAL
+Satuation	mod_sediment.F	/^    REAL(SP) :: Satuation$/;"	v	module:SEDIMENT_MODULE
+Sc	mod_tracer.F	/^     REAL(SP),SAVE,DIMENSION(:),ALLOCATABLE :: X_TRACK,Y_TRACK,Sc,/;"	v	module:TRACER
+Sc_pre	mod_tracer.F	/^                   U_TRACER,V_TRACER,X_TRACK_PRE,Y_TRACK_PRE, &$/;"	v	module:TRACER
+Sdensity	mod_sediment.F	/^    REAL(SP) :: D50,Sdensity,/;"	v	module:SEDIMENT_MODULE
+Sed_Scheme	mod_sediment.F	/^    CHARACTER(LEN=80) Sed_Scheme$/;"	v	module:SEDIMENT_MODULE
+Segma_Ser	mod_global.F	/^       REAL(SP),DIMENSION(:),ALLOCATABLE :: Segma_Ser,/;"	v	module:GLOBAL
+Shields_cr	mod_sediment.F	/^    REAL(SP) :: Shields_cr,/;"	v	module:SEDIMENT_MODULE
+Shields_cr_bedload	mod_sediment.F	/^    REAL(SP) :: Shields_cr_bedload,/;"	v	module:SEDIMENT_MODULE
+SigWaveHeight	mod_global.F	/^	REAL(SP),DIMENSION(:,:),ALLOCATABLE :: ETA2sum,ETA2mean,SigWaveHeight$/;"	v	module:GLOBAL
+SigmaX1	mod_meteo.F	/^                DP_storm1,SigmaX1,/;"	v	module:METEO_MODULE
+SigmaX2	mod_meteo.F	/^    REAL(SP) :: DP_storm2,SigmaX2,/;"	v	module:METEO_MODULE
+SigmaY1	mod_meteo.F	/^                DP_storm1,SigmaX1, SigmaY1,/;"	v	module:METEO_MODULE
+SigmaY2	mod_meteo.F	/^    REAL(SP) :: DP_storm2,SigmaX2, SigmaY2,/;"	v	module:METEO_MODULE
+Sigma_Theta	mod_global.F	/^        REAL(SP) :: FreqMin,FreqMax,FreqPeak,GammaTMA,Hmo,ThetaPeak,&$/;"	v	module:GLOBAL
+SlideModel	mod_meteo.F	/^       LOGICAL :: SlideModel /;"	v	module:METEO_MODULE
+Slide_Model_Forcing	mod_meteo.F	/^SUBROUTINE Slide_Model_Forcing$/;"	s	module:METEO_MODULE
+Slide_Model_Setup	mod_meteo.F	/^SUBROUTINE Slide_Model_Setup$/;"	s	module:METEO_MODULE
+SlopeCap	mod_bathy_correction.F	/^    REAL(SP) :: SmoothBelowDepth, SlopeCap$/;"	v	module:BATHY_CORRECTION_MODULE
+SlopeX	mod_global.F	/^          U1p,V1p, SlopeX,/;"	v	module:GLOBAL
+SlopeY	mod_global.F	/^          U1p,V1p, SlopeX,SlopeY,/;"	v	module:GLOBAL
+Sm	mod_global.F	/^        REAL(SP),DIMENSION(:,:,:),ALLOCATABLE ::Cm,Sm$/;"	v	module:GLOBAL
+Sm_eta	mod_global.F	/^       REAL(SP),DIMENSION(:,:,:),ALLOCATABLE ::Cm_eta,Sm_eta,/;"	v	module:GLOBAL
+Sm_u	mod_global.F	/^                Cm_u,Sm_u,/;"	v	module:GLOBAL
+Sm_v	mod_global.F	/^                Cm_u,Sm_u,Cm_v,Sm_v$/;"	v	module:GLOBAL
+SmoothBelowDepth	mod_bathy_correction.F	/^    REAL(SP) :: SmoothBelowDepth,/;"	v	module:BATHY_CORRECTION_MODULE
+SolitaryPositiveDirection	mod_global.F	/^        LOGICAL :: SolitaryPositiveDirection /;"	v	module:GLOBAL
+SourceTerms	sources.F	/^SUBROUTINE SourceTerms$/;"	s
+SourceTerms_GPU	moment_gpu.F	/^subroutine SourceTerms_GPU$/;"	s	module:DispersionFluxesSources
+SourceTerms_WaveMaker_kernel	moment_gpu.F	/^attributes(global) subroutine SourceTerms_WaveMaker_kernel&/;"	s	module:DispersionFluxesSources
+SourceTerms_step1_kernel	moment_gpu.F	/^attributes(global) subroutine SourceTerms_step1_kernel&/;"	s	module:DispersionFluxesSources
+SourceTerms_step2_kernel	moment_gpu.F	/^attributes(global) subroutine SourceTerms_step2_kernel&/;"	s	module:DispersionFluxesSources
+SourceX	mod_global.F	/^          Gx,Gy,P,Q,SourceX,/;"	v	module:GLOBAL
+SourceY	mod_global.F	/^          Gx,Gy,P,Q,SourceX,SourceY,/;"	v	module:GLOBAL
+SpongeMaker	mod_global.F	/^        REAL(SP),DIMENSION(:,:),ALLOCATABLE :: SPONGE,SpongeMaker$/;"	v	module:GLOBAL
+Sponge_east_width	mod_global.F	/^        REAL(SP)::Sponge_west_width,Sponge_east_width,/;"	v	module:GLOBAL
+Sponge_north_width	mod_global.F	/^                  Sponge_south_width,Sponge_north_width,/;"	v	module:GLOBAL
+Sponge_south_width	mod_global.F	/^        REAL(SP)::Sponge_west_width,Sponge_east_width, &$/;"	v	module:GLOBAL
+Sponge_west_width	mod_global.F	/^        REAL(SP)::Sponge_west_width,/;"	v	module:GLOBAL
+Stokes_Drift_Ser	mod_global.F	/^       REAL(SP) :: Stokes_Drift_Ser$/;"	v	module:GLOBAL
+StormPressureTotal	mod_meteo.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: StormPressureTotal,/;"	v	module:METEO_MODULE
+StormPressureX	mod_meteo.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: StormPressureTotal, &$/;"	v	module:METEO_MODULE
+StormPressureY	mod_meteo.F	/^                                           StormPressureX,StormPressureY$/;"	v	module:METEO_MODULE
+StretchGrid	mod_global.F	/^       LOGICAL :: StretchGrid /;"	v	module:GLOBAL
+SxL	mod_global.F	/^          GxL,GxR,GyL,GyR, &$/;"	v	module:GLOBAL
+SxR	mod_global.F	/^          SxL,SxR,/;"	v	module:GLOBAL
+SyL	mod_global.F	/^          SxL,SxR,SyL,/;"	v	module:GLOBAL
+SyR	mod_global.F	/^          SxL,SxR,SyL,SyR,/;"	v	module:GLOBAL
+TIME	mod_global.F	/^       REAL(SP)::  DT,TIME,/;"	v	module:GLOBAL
+TIME_COUPLING_1	mod_global.F	/^       REAL(SP) :: TIME_COUPLING_1,/;"	v	module:GLOBAL
+TIME_COUPLING_2	mod_global.F	/^       REAL(SP) :: TIME_COUPLING_1,TIME_COUPLING_2$/;"	v	module:GLOBAL
+TITLE	mod_global.F	/^       CHARACTER(LEN=80) TITLE$/;"	v	module:GLOBAL
+TOTAL_TIME	mod_global.F	/^       REAL(SP)::  DT,TIME,TOTAL_TIME,/;"	v	module:GLOBAL
+TRACER	mod_tracer.F	/^MODULE TRACER$/;"	m
+TRACER_INITIAL	mod_tracer.F	/^SUBROUTINE TRACER_INITIAL$/;"	s	module:TRACER
+TRACKER_START	mod_tracer.F	/^     REAL(SP),SAVE,DIMENSION(:),ALLOCATABLE :: TRACKER_START$/;"	v	module:TRACER
+TRACK_TIME_COUNT	mod_tracer.F	/^     REAL(SP),SAVE :: TRACK_TIME_COUNT /;"	v	module:TRACER
+TRACK_XY	mod_tracer.F	/^SUBROUTINE TRACK_XY$/;"	s	module:TRACER
+TRIDx	tridiagnal.F	/^SUBROUTINE TRIDx /;"	s
+TRIDx_ser	tridiagnal.F	/^SUBROUTINE TRIDx_ser(/;"	s
+TRIDy	tridiagnal.F	/^SUBROUTINE TRIDy /;"	s
+TRIDy_periodic	tridiagnal.F	/^    SUBROUTINE TRIDy_periodic /;"	s
+TRIDy_ser	tridiagnal.F	/^SUBROUTINE TRIDy_ser(/;"	s
+TXP1	fluxes.F	/^     REAL(SP) :: TXP1,/;"	v
+TXP2	fluxes.F	/^     REAL(SP) :: TXP1,TXP2,/;"	v
+TXP3	fluxes.F	/^     REAL(SP) :: TXP1,TXP2,TXP3,/;"	v
+T_INTV_mean	mod_global.F	/^      REAL(SP) :: T_INTV_mean /;"	v	module:GLOBAL
+T_brk	mod_global.F	/^        REAL(SP) :: T_brk$/;"	v	module:GLOBAL
+T_sum	mod_global.F	/^      REAL(SP) :: T_INTV_mean = 20.0,T_sum=/;"	v	module:GLOBAL
+Tau_cr	mod_sediment.F	/^    REAL(SP) :: Shields_cr,A_sed,Tau_cr,/;"	v	module:SEDIMENT_MODULE
+Tau_cr_bedload	mod_sediment.F	/^    REAL(SP) :: Shields_cr_bedload,Tau_cr_bedload$/;"	v	module:SEDIMENT_MODULE
+Theta1	mod_meteo.F	/^                DP_storm1,SigmaX1, SigmaY1, Theta1$/;"	v	module:METEO_MODULE
+Theta2	mod_meteo.F	/^    REAL(SP) :: DP_storm2,SigmaX2, SigmaY2, Theta2,/;"	v	module:METEO_MODULE
+ThetaPeak	mod_global.F	/^        REAL(SP) :: FreqMin,FreqMax,FreqPeak,GammaTMA,Hmo,ThetaPeak,/;"	v	module:GLOBAL
+ThetaStorm	mod_meteo.F	/^                TimeStorm1,TimeStorm2,ThetaStorm$/;"	v	module:METEO_MODULE
+ThetaVessel	mod_vessel.F	/^                                       TimeVessel1,TimeVessel2,ThetaVessel$/;"	v	module:VESSEL_MODULE
+Theta_Ser	mod_global.F	/^       REAL(SP),DIMENSION(:),ALLOCATABLE :: Per_Ser,Phase_Ser,&$/;"	v	module:GLOBAL
+Theta_WK	mod_global.F	/^                  Xc,Yc, WID,Xc_WK,Tperiod,AMP_WK,DEP_WK,Theta_WK,/;"	v	module:GLOBAL
+TimeStorm1	mod_meteo.F	/^                Pn_storm2, Pc_storm2,A_storm2,B_storm2, &$/;"	v	module:METEO_MODULE
+TimeStorm2	mod_meteo.F	/^                TimeStorm1,TimeStorm2,/;"	v	module:METEO_MODULE
+TimeVessel1	mod_vessel.F	/^                                       AlphaVessel,BetaVessel,Pvessel, &$/;"	v	module:VESSEL_MODULE
+TimeVessel2	mod_vessel.F	/^                                       TimeVessel1,TimeVessel2,/;"	v	module:VESSEL_MODULE
+TimeWind	mod_meteo.F	/^       REAL(SP),DIMENSION(:),ALLOCATABLE :: TimeWind$/;"	v	module:METEO_MODULE
+Time_Scheme	mod_global.F	/^       CHARACTER(LEN=80) Time_Scheme$/;"	v	module:GLOBAL
+Time_ramp	mod_global.F	/^                  rlamda,Time_ramp,/;"	v	module:GLOBAL
+TotalBedLoad	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::Hpo,CHH0,TotalSuspendLoad,TotalBedLoad$/;"	v	module:SEDIMENT_MODULE
+TotalKernelTime	mod_cuda.F	/^    real(SP),save :: TotalKernelTime$/;"	v	module:mod_cuda
+TotalSuspendLoad	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::Hpo,CHH0,TotalSuspendLoad,/;"	v	module:SEDIMENT_MODULE
+Tperiod	mod_global.F	/^                  Xc,Yc, WID,Xc_WK,Tperiod,/;"	v	module:GLOBAL
+TriSolver	mod_cuda.F	/^    integer,parameter :: TriSolver /;"	v	module:mod_cuda
+TroughLimit	mod_global.F	/^       REAL(SP) :: CrestLimit, TroughLimit$/;"	v	module:GLOBAL
+U0	mod_global.F	/^          ETAx,ETAy, ETAT, ETATx,ETATy, &$/;"	v	module:GLOBAL
+U1p	mod_global.F	/^          Dx,Dy, Coriolis,Lat_theta, &$/;"	v	module:GLOBAL
+U1p	mod_global.F	/^          U4,V4,U1p,/;"	v	module:GLOBAL
+U1pp	mod_global.F	/^          U4,V4,U1p,V1p, &$/;"	v	module:GLOBAL
+U2	mod_global.F	/^          U1pp,V1pp, &$/;"	v	module:GLOBAL
+U3	mod_global.F	/^          U2,V2,U3,/;"	v	module:GLOBAL
+U4	mod_global.F	/^		V4xL,V4xR,U4y/;"	v	module:GLOBAL
+U4xL	mod_global.F	/^          U2,V2,U3,V3, &$/;"	v	module:GLOBAL
+U4xL	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: &$/;"	v	module:GLOBAL
+U4xR	mod_global.F	/^          U4xL,U4xR,/;"	v	module:GLOBAL
+U4yL	mod_global.F	/^		V4xL,V4xR,U4yL,/;"	v	module:GLOBAL
+U4yR	mod_global.F	/^		V4xL,V4xR,U4yL,U4yR,/;"	v	module:GLOBAL
+UPDATE_MASK	masks.F	/^SUBROUTINE UPDATE_MASK$/;"	s
+UPDATE_MASK_GPU	masks_gpu.F	/^SUBROUTINE UPDATE_MASK_GPU$/;"	s	module:update_mask_module
+U_COUPLING_EAST	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE::U_COUPLING_EAST,/;"	v	module:GLOBAL
+U_COUPLING_NORTH	mod_global.F	/^                  U_COUPLING_SOUTH,V_COUPLING_SOUTH,Z_COUPLING_SOUTH,&$/;"	v	module:GLOBAL
+U_COUPLING_SOUTH	mod_global.F	/^                  U_COUPLING_WEST,V_COUPLING_WEST,Z_COUPLING_WEST,&$/;"	v	module:GLOBAL
+U_COUPLING_WEST	mod_global.F	/^                  V_COUPLING_EAST,Z_COUPLING_EAST,&$/;"	v	module:GLOBAL
+U_FILE	mod_global.F	/^       CHARACTER(LEN=80) U_FILE$/;"	v	module:GLOBAL
+U_TRACER	mod_tracer.F	/^     REAL(SP),SAVE,DIMENSION(:),ALLOCATABLE :: X_TRACK,Y_TRACK,Sc,S1,S2,S3,&$/;"	v	module:TRACER
+Ubar	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE::Ubar0/;"	v	module:GLOBAL
+Ubar0	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE::Ubar0,/;"	v	module:GLOBAL
+UbarOld	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Ui,Vi,ETAi,&$/;"	v	module:GLOBAL
+Ubott	mod_tracer.F	/^     REAL(SP),SAVE,DIMENSION(:,:),ALLOCATABLE :: Usurf,Vsurf,Ubott,/;"	v	module:TRACER
+Ui	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Ui,/;"	v	module:GLOBAL
+Umean	mod_global.F	/^      REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Umean,/;"	v	module:GLOBAL
+Usum	mod_global.F	/^                  ETAmean,Usum,/;"	v	module:GLOBAL
+Usurf	mod_tracer.F	/^     REAL(SP),SAVE,DIMENSION(:,:),ALLOCATABLE :: Usurf,/;"	v	module:TRACER
+Ut	mod_global.F	/^          U0,V0,Ut,/;"	v	module:GLOBAL
+Utx	mod_global.F	/^          U0,V0,Ut,Vt,Utx,/;"	v	module:GLOBAL
+Utxx	mod_global.F	/^          U0,V0,Ut,Vt,Utx,Vty,Utxx,/;"	v	module:GLOBAL
+Utxy	mod_global.F	/^          U0,V0,Ut,Vt,Utx,Vty,Utxx,Utxy,/;"	v	module:GLOBAL
+Uvel	mod_vessel.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE :: Uvel,/;"	v	module:VESSEL_MODULE
+Ux	mod_global.F	/^          Uxx/;"	v	module:GLOBAL
+UxL	mod_global.F	/^          DelyU,DelyHV,DelyV,DelyEtar,&$/;"	v	module:GLOBAL
+UxR	mod_global.F	/^          UxL,UxR,/;"	v	module:GLOBAL
+Uxx	mod_global.F	/^          Vxy,DVxy,Uxy,DUxy, &$/;"	v	module:GLOBAL
+Uxy	mod_global.F	/^          Vxy,DVxy,Uxy,/;"	v	module:GLOBAL
+Uy	mod_global.F	/^          Ux,Vx,Uy,/;"	v	module:GLOBAL
+UyL	mod_global.F	/^          EtaRxL,EtaRxR,&$/;"	v	module:GLOBAL
+UyR	mod_global.F	/^          UyL,UyR,/;"	v	module:GLOBAL
+V0	mod_global.F	/^          U0,V0,/;"	v	module:GLOBAL
+V1p	mod_global.F	/^          U1p,V1p,/;"	v	module:GLOBAL
+V1p	mod_global.F	/^          U4,V4,U1p,V1p,/;"	v	module:GLOBAL
+V1pp	mod_global.F	/^          U1pp,V1pp,/;"	v	module:GLOBAL
+V2	mod_global.F	/^          U2,V2,/;"	v	module:GLOBAL
+V3	mod_global.F	/^          U2,V2,U3,V3,/;"	v	module:GLOBAL
+V4	mod_global.F	/^          U4,V4,/;"	v	module:GLOBAL
+V4xL	mod_global.F	/^          U4xL,U4xR,V4yL,V4yR, &$/;"	v	module:GLOBAL
+V4xR	mod_global.F	/^		V4xL,V4xR,/;"	v	module:GLOBAL
+V4yL	mod_global.F	/^          U4xL,U4xR,V4yL,/;"	v	module:GLOBAL
+V4yR	mod_global.F	/^          U4xL,U4xR,V4yL,V4yR,/;"	v	module:GLOBAL
+VAL_READ	mod_input.F	/^  CHARACTER(LEN=80) :: VAL_READ /;"	v	module:INPUT_READ
+VAL_TYPE	mod_input.F	/^  CHARACTER(LEN=80) :: VAL_TYPE /;"	v	module:INPUT_READ
+VAN1	fluxes.F	/^     REAL(SP) :: VAN1,/;"	v
+VAN2	fluxes.F	/^     REAL(SP) :: VAN1, VAN2,/;"	v
+VANLEER_LIMITER	fluxes.F	/^REAL(SP) FUNCTION VANLEER_LIMITER(/;"	f
+VESSEL_FORCING	mod_vessel.F	/^SUBROUTINE VESSEL_FORCING$/;"	s	module:VESSEL_MODULE
+VESSEL_INITIAL	mod_vessel.F	/^SUBROUTINE VESSEL_INITIAL$/;"	s	module:VESSEL_MODULE
+VESSEL_MODULE	mod_vessel.F	/^MODULE VESSEL_MODULE$/;"	m
+VISCOSITY_BREAKING	mod_global.F	/^       LOGICAL :: VISCOSITY_BREAKING /;"	v	module:GLOBAL
+VISCOSITY_WMAKER	wavemaker.F	/^SUBROUTINE VISCOSITY_WMAKER /;"	s
+VTYPE	bc.F	/^    INTEGER,INTENT(IN) :: VTYPE$/;"	v
+VTYPE	exchange_gpu.F	/^    INTEGER,INTENT(IN) :: VTYPE$/;"	v
+V_COUPLING_EAST	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE::U_COUPLING_EAST,&$/;"	v	module:GLOBAL
+V_COUPLING_NORTH	mod_global.F	/^                  U_COUPLING_NORTH,V_COUPLING_NORTH,/;"	v	module:GLOBAL
+V_COUPLING_SOUTH	mod_global.F	/^                  U_COUPLING_SOUTH,V_COUPLING_SOUTH,/;"	v	module:GLOBAL
+V_COUPLING_WEST	mod_global.F	/^                  U_COUPLING_WEST,V_COUPLING_WEST,/;"	v	module:GLOBAL
+V_FILE	mod_global.F	/^       CHARACTER(LEN=80) V_FILE$/;"	v	module:GLOBAL
+V_TRACER	mod_tracer.F	/^                   U_TRACER,V_TRACER,/;"	v	module:TRACER
+Vbar	mod_global.F	/^                               Ubar,Vbar$/;"	v	module:GLOBAL
+Vbar0	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE::Ubar0,Vbar0,/;"	v	module:GLOBAL
+VbarOld	mod_global.F	/^                        UbarOld,VbarOld,/;"	v	module:GLOBAL
+Vbott	mod_tracer.F	/^     REAL(SP),SAVE,DIMENSION(:,:),ALLOCATABLE :: Usurf,Vsurf,Ubott,Vbott$/;"	v	module:TRACER
+VelocityMax	mod_global.F	/^          tmp4preview,HeightMax,HeightMin,VelocityMax,/;"	v	module:GLOBAL
+VesselFluxGradient	mod_vessel.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: VesselFluxGradient,/;"	v	module:VESSEL_MODULE
+VesselFluxGradientEach	mod_vessel.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: VesselFluxGradient,VesselFluxGradientEach,/;"	v	module:VESSEL_MODULE
+VesselPressureEach	mod_vessel.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: VesselPressureTotal,VesselPressureEach,/;"	v	module:VESSEL_MODULE
+VesselPressureTotal	mod_vessel.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: VesselPressureTotal,/;"	v	module:VESSEL_MODULE
+VesselPressureX	mod_vessel.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE :: VesselPressureTotal,VesselPressureEach, &$/;"	v	module:VESSEL_MODULE
+VesselPressureY	mod_vessel.F	/^                                       VesselPressureX,VesselPressureY$/;"	v	module:VESSEL_MODULE
+Vi	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Ui,Vi,/;"	v	module:GLOBAL
+Vin	fluxes.F	/^     REAL(SP),INTENT(IN),DIMENSION(M,N) :: Vin$/;"	v
+Vmean	mod_global.F	/^      REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Umean,Vmean,/;"	v	module:GLOBAL
+VorticityMax	mod_global.F	/^          MomentumFluxMax,VorticityMax$/;"	v	module:GLOBAL
+Vsum	mod_global.F	/^                  ETAmean,Usum,Vsum,/;"	v	module:GLOBAL
+Vsurf	mod_tracer.F	/^     REAL(SP),SAVE,DIMENSION(:,:),ALLOCATABLE :: Usurf,Vsurf,/;"	v	module:TRACER
+Vt	mod_global.F	/^          U0,V0,Ut,Vt,/;"	v	module:GLOBAL
+Vtxy	mod_global.F	/^          U0,V0,Ut,Vt,Utx,Vty,Utxx,Utxy,Vtxy,/;"	v	module:GLOBAL
+Vty	mod_global.F	/^          U0,V0,Ut,Vt,Utx,Vty,/;"	v	module:GLOBAL
+Vtyy	mod_global.F	/^          U0,V0,Ut,Vt,Utx,Vty,Utxx,Utxy,Vtxy,Vtyy,/;"	v	module:GLOBAL
+Vvel	mod_vessel.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE :: Uvel,Vvel$/;"	v	module:VESSEL_MODULE
+Vx	mod_global.F	/^          Ux,Vx,/;"	v	module:GLOBAL
+VxL	mod_global.F	/^          UxL,UxR,VxL,/;"	v	module:GLOBAL
+VxR	mod_global.F	/^          UxL,UxR,VxL,VxR,/;"	v	module:GLOBAL
+Vxy	mod_global.F	/^          SxL,SxR,SyL,SyR, &$/;"	v	module:GLOBAL
+Vy	mod_global.F	/^          Ux,Vx,Uy,Vy,/;"	v	module:GLOBAL
+VyL	mod_global.F	/^          UyL,UyR,VyL,/;"	v	module:GLOBAL
+VyR	mod_global.F	/^          UyL,UyR,VyL,VyR,/;"	v	module:GLOBAL
+Vyy	mod_global.F	/^          Uxx,DUxx,Vyy,/;"	v	module:GLOBAL
+WAVEMAKER_Cbrk	mod_global.F	/^       REAL(SP) :: WAVEMAKER_Cbrk$/;"	v	module:GLOBAL
+WAVEMAKER_INITIALIZATION	wavemaker.F	/^SUBROUTINE WAVEMAKER_INITIALIZATION$/;"	s
+WAVEMAKER_VIS	mod_global.F	/^       LOGICAL :: WAVEMAKER_VIS=/;"	v	module:GLOBAL
+WAVEMAKER_visbrk	mod_global.F	/^       REAL(SP) :: visbrk, WAVEMAKER_visbrk$/;"	v	module:GLOBAL
+WAVE_BREAKING	breaker.F	/^SUBROUTINE WAVE_BREAKING$/;"	s
+WAVE_BREAKING_GPU	breaker_gpu.F	/^SUBROUTINE WAVE_BREAKING_GPU$/;"	s	module:wave_breaking_module
+WAVE_COMP	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: WAVE_COMP$/;"	v	module:GLOBAL
+WAVE_DATA_TYPE	mod_global.F	/^       CHARACTER(LEN=80) WAVE_DATA_TYPE$/;"	v	module:GLOBAL
+WAVE_SPEED	fluxes.F	/^SUBROUTINE WAVE_SPEED(/;"	s
+WID	mod_global.F	/^                  Xc,Yc, WID,/;"	v	module:GLOBAL
+WID	samples.F	/^     REAL(SP),INTENT(IN) :: DX,DY,Xc,Yc,WID,/;"	v
+WID	samples.F	/^     REAL(SP),INTENT(IN) :: Xc,Yc,WID,/;"	v
+WIND_FILE	mod_meteo.F	/^       CHARACTER(LEN=80) WIND_FILE$/;"	v	module:METEO_MODULE
+WK_EQUAL_DFREQ_IRREGULAR_WAVE	wavemaker.F	/^SUBROUTINE WK_EQUAL_DFREQ_IRREGULAR_WAVE /;"	s
+WK_WAVEMAKER_2D_SPECTRAL_DATA	wavemaker.F	/^SUBROUTINE WK_WAVEMAKER_2D_SPECTRAL_DATA /;"	s
+WK_WAVEMAKER_IRREGULAR_WAVE	wavemaker.F	/^SUBROUTINE WK_WAVEMAKER_IRREGULAR_WAVE /;"	s
+WK_WAVEMAKER_REGULAR_WAVE	wavemaker.F	/^SUBROUTINE WK_WAVEMAKER_REGULAR_WAVE /;"	s
+WK_WAVEMAKER_TIME_SERIES	wavemaker.F	/^SUBROUTINE WK_WAVEMAKER_TIME_SERIES /;"	s
+WS	mod_sediment.F	/^    REAL(SP) :: D50,Sdensity,n_porosity,DT1,Counter,WS,/;"	v	module:SEDIMENT_MODULE
+WU	mod_meteo.F	/^       REAL(SP),DIMENSION(:),ALLOCATABLE :: WU,/;"	v	module:METEO_MODULE
+WV	mod_meteo.F	/^       REAL(SP),DIMENSION(:),ALLOCATABLE :: WU,WV$/;"	v	module:METEO_MODULE
+WaterLevel	mod_global.F	/^       REAL(SP) :: WaterLevel /;"	v	module:GLOBAL
+WaveCompFile	mod_global.F	/^       CHARACTER(LEN=80) WaveCompFile$/;"	v	module:GLOBAL
+WaveHeightAve	mod_global.F	/^                WaveHeightRMS,WaveHeightAve,/;"	v	module:GLOBAL
+WaveHeightRMS	mod_global.F	/^      REAL(SP),DIMENSION(:,:),ALLOCATABLE :: &$/;"	v	module:GLOBAL
+WaveMaker	mod_global.F	/^       CHARACTER(LEN=80) WaveMaker$/;"	v	module:GLOBAL
+WaveMakerCd	mod_global.F	/^        REAL(SP) :: WaveMakerCd$/;"	v	module:GLOBAL
+WaveMakerCode	mod_cuda.F	/^        integer :: WaveMakerCode$/;"	v	module:mod_cuda
+WaveMakerCurrentBalance	mod_global.F	/^        LOGICAL :: WaveMakerCurrentBalance /;"	v	module:GLOBAL
+Wave_Number_Ser	mod_global.F	/^       REAL(SP),DIMENSION(:),ALLOCATABLE :: Segma_Ser,Wave_Number_Ser$/;"	v	module:GLOBAL
+Wavemaker_Mass	mod_global.F	/^        REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Wavemaker_Mass$/;"	v	module:GLOBAL
+WetArea	mod_global.F	/^        REAL(SP) :: Dmass,WetArea,/;"	v	module:GLOBAL
+WidthSlide	mod_meteo.F	/^    REAL(SP) :: LengthSlide,WidthSlide,/;"	v	module:METEO_MODULE
+WidthVessel	mod_vessel.F	/^                                       LengthVessel,WidthVessel,/;"	v	module:VESSEL_MODULE
+WidthWaveMaker	mod_global.F	/^       REAL(SP) :: Dep_Ser,WidthWaveMaker,/;"	v	module:GLOBAL
+Width_WK	mod_global.F	/^                  rlamda,Time_ramp,D_gen,Beta_gen,Width_WK,/;"	v	module:GLOBAL
+WindConstantField	mod_meteo.F	/^       LOGICAL :: WindConstantField /;"	v	module:METEO_MODULE
+WindCrestPercent	mod_meteo.F	/^       REAL(SP) :: Cdw,WindCrestPercent$/;"	v	module:METEO_MODULE
+WindForce	mod_meteo.F	/^       LOGICAL :: WindForce /;"	v	module:METEO_MODULE
+WindHollandModel	mod_meteo.F	/^       LOGICAL :: WindHollandModel /;"	v	module:METEO_MODULE
+WindU2D	mod_meteo.F	/^       REAL(SP), DIMENSION(:,:),ALLOCATABLE :: WindU2D,/;"	v	module:METEO_MODULE
+WindV2D	mod_meteo.F	/^       REAL(SP), DIMENSION(:,:),ALLOCATABLE :: WindU2D,WindV2D$/;"	v	module:METEO_MODULE
+WindWaveInteraction	mod_meteo.F	/^       LOGICAL :: WindWaveInteraction /;"	v	module:METEO_MODULE
+XWAVEMAKER	mod_global.F	/^        REAL(SP)::AMP_SOLI,DEP_SOLI,LAG_SOLI, CPH_SOLI,XWAVEMAKER,/;"	v	module:GLOBAL
+X_TRACK	mod_tracer.F	/^     REAL(SP),SAVE,DIMENSION(:),ALLOCATABLE :: X_TRACK,/;"	v	module:TRACER
+X_TRACK_PRE	mod_tracer.F	/^                   U_TRACER,V_TRACER,X_TRACK_PRE,/;"	v	module:TRACER
+Xc	mod_global.F	/^        REAL(SP)::AMP_SOLI,DEP_SOLI,LAG_SOLI, CPH_SOLI,XWAVEMAKER, &$/;"	v	module:GLOBAL
+Xc	samples.F	/^     REAL(SP),INTENT(IN) :: DX,DY,Xc,/;"	v
+Xc	samples.F	/^     REAL(SP),INTENT(IN) :: Xc,/;"	v
+Xc_WK	mod_global.F	/^                  Xc,Yc, WID,Xc_WK,/;"	v	module:GLOBAL
+Xco	mod_global.F	/^      REAL(SP),DIMENSION(:),ALLOCATABLE ::  Xco,/;"	v	module:GLOBAL
+Xco	mod_meteo.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE ::  Xco,/;"	v	module:METEO_MODULE
+Xslp	mod_global.F	/^       REAL(SP)::Depth_Flat, SLP,Xslp$/;"	v	module:GLOBAL
+Xstorm1	mod_meteo.F	/^    REAL(SP) :: Xstorm1,/;"	v	module:METEO_MODULE
+Xstorm2	mod_meteo.F	/^    REAL(SP) :: Xstorm1,Ystorm1,Xstorm2,/;"	v	module:METEO_MODULE
+Xvessel1	mod_vessel.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE :: Xvessel1,/;"	v	module:VESSEL_MODULE
+Xvessel2	mod_vessel.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE :: Xvessel1,Yvessel1,Xvessel2,/;"	v	module:VESSEL_MODULE
+Y1_end	etauv_solver_gpu.F	/^    real(SP), dimension(:), allocatable :: A_beg, C_end,Y1_end,/;"	v	module:etauv_solver_module
+Y2_end	etauv_solver_gpu.F	/^    real(SP), dimension(:), allocatable :: A_beg, C_end,Y1_end,Y2_end$/;"	v	module:etauv_solver_module
+Y_TRACK	mod_tracer.F	/^     REAL(SP),SAVE,DIMENSION(:),ALLOCATABLE :: X_TRACK,Y_TRACK,/;"	v	module:TRACER
+Y_TRACK_PRE	mod_tracer.F	/^                   U_TRACER,V_TRACER,X_TRACK_PRE,Y_TRACK_PRE,/;"	v	module:TRACER
+Yc	mod_global.F	/^                  Xc,Yc,/;"	v	module:GLOBAL
+Yc	samples.F	/^     REAL(SP),INTENT(IN) :: DX,DY,Xc,Yc,/;"	v
+Yc	samples.F	/^     REAL(SP),INTENT(IN) :: Xc,Yc,/;"	v
+Yc_WK	mod_global.F	/^                  Ywidth_WK,Yc_WK$/;"	v	module:GLOBAL
+Yco	mod_global.F	/^      REAL(SP),DIMENSION(:),ALLOCATABLE ::  Xco,Yco$/;"	v	module:GLOBAL
+Yco	mod_meteo.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE ::  Xco,Yco$/;"	v	module:METEO_MODULE
+Ystorm1	mod_meteo.F	/^    REAL(SP) :: Xstorm1,Ystorm1,/;"	v	module:METEO_MODULE
+Ystorm2	mod_meteo.F	/^    REAL(SP) :: Xstorm1,Ystorm1,Xstorm2,Ystorm2,/;"	v	module:METEO_MODULE
+Yvessel1	mod_vessel.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE :: Xvessel1,Yvessel1,/;"	v	module:VESSEL_MODULE
+Yvessel2	mod_vessel.F	/^    REAL(SP),DIMENSION(:),ALLOCATABLE :: Xvessel1,Yvessel1,Xvessel2,Yvessel2,/;"	v	module:VESSEL_MODULE
+Ywidth_WK	mod_global.F	/^                  rlamda,Time_ramp,D_gen,Beta_gen,Width_WK,Delta_WK,&$/;"	v	module:GLOBAL
+Z_COUPLING_EAST	mod_global.F	/^                  V_COUPLING_EAST,Z_COUPLING_EAST,/;"	v	module:GLOBAL
+Z_COUPLING_NORTH	mod_global.F	/^                  U_COUPLING_NORTH,V_COUPLING_NORTH,Z_COUPLING_NORTH$/;"	v	module:GLOBAL
+Z_COUPLING_SOUTH	mod_global.F	/^                  U_COUPLING_SOUTH,V_COUPLING_SOUTH,Z_COUPLING_SOUTH,/;"	v	module:GLOBAL
+Z_COUPLING_WEST	mod_global.F	/^                  U_COUPLING_WEST,V_COUPLING_WEST,Z_COUPLING_WEST,/;"	v	module:GLOBAL
+Zb	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::Zb,/;"	v	module:SEDIMENT_MODULE
+ZbOld	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CHHyR,CHHyL,CHYyL,CHYyR,ZbOld,/;"	v	module:SEDIMENT_MODULE
+Zs	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::FsL,FsR,GsL,GsR,Fs,Gs,CH0,Zs,/;"	v	module:SEDIMENT_MODULE
+a0_Nwave	mod_global.F	/^                  x2_Nwave = 5.0, &$/;"	v	module:GLOBAL
+a1	mod_global.F	/^       REAL(SP) :: a1,/;"	v	module:GLOBAL
+a2	mod_global.F	/^       REAL(SP) :: a1,a2,/;"	v	module:GLOBAL
+allocate_wavemaker_variables_gpu	init_gpu.F	/^subroutine allocate_wavemaker_variables_gpu$/;"	s	module:init_gpu
+alpha	mod_global.F	/^       REAL(SP),PARAMETER,DIMENSION(3)::alpha=/;"	v	module:GLOBAL
+ava	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::FsL,FsR,GsL,GsR,Fs,Gs,CH0,Zs,ava$/;"	v	module:SEDIMENT_MODULE
+b1	mod_global.F	/^       REAL(SP) :: a1,a2,b1,/;"	v	module:GLOBAL
+b2	mod_global.F	/^       REAL(SP) :: a1,a2,b1,b2$/;"	v	module:GLOBAL
+beta	mod_global.F	/^        REAL(SP),PARAMETER,DIMENSION(3)::beta=/;"	v	module:GLOBAL
+beta_d	mod_sediment.F	/^    REAL(SP) :: beta_d,/;"	v	module:SEDIMENT_MODULE
+boundary_condition_X_kernel	exchange_gpu.F	/^attributes(global) subroutine boundary_condition_X_kernel(/;"	s	module:boundary_condition_module
+boundary_condition_Y_kernel	exchange_gpu.F	/^attributes(global) subroutine boundary_condition_Y_kernel(/;"	s	module:boundary_condition_module
+boundary_condition_module	exchange_gpu.F	/^module boundary_condition_module$/;"	m
+breaking_kernel	breaker_gpu.F	/^attributes(global) subroutine breaking_kernel&/;"	s	module:wave_breaking_module
+c_a	mod_sediment.F	/^    REAL(SP) :: beta_d,reduction,tau_xy,c_a,/;"	v	module:SEDIMENT_MODULE
+c_b	mod_sediment.F	/^    REAL(SP) :: beta_d,reduction,tau_xy,c_a,c_b,/;"	v	module:SEDIMENT_MODULE
+c_dum	mod_sediment.F	/^    INTEGER :: Morph_step,c_dum$/;"	v	module:SEDIMENT_MODULE
+cal_dispersion_gpu	moment_gpu.F	/^subroutine cal_dispersion_gpu$/;"	s	module:DispersionFluxesSources
+cal_dispersion_step1_kernel	moment_gpu.F	/^attributes(global) subroutine cal_dispersion_step1_kernel&/;"	s	module:DispersionFluxesSources
+cal_dispersion_step1p5_kernel	moment_gpu.F	/^attributes(global) subroutine cal_dispersion_step1p5_kernel&/;"	s	module:DispersionFluxesSources
+cal_dispersion_step2_kernel	moment_gpu.F	/^attributes(global) subroutine cal_dispersion_step2_kernel&/;"	s	module:DispersionFluxesSources
+cal_dispersion_step3_kernel	moment_gpu.F	/^attributes(global) subroutine cal_dispersion_step3_kernel&/;"	s	module:DispersionFluxesSources
+cal_dispersion_step4_kernel	moment_gpu.F	/^attributes(global) subroutine cal_dispersion_step4_kernel&/;"	s	module:DispersionFluxesSources
+cal_dispersion_step5_kernel	moment_gpu.F	/^attributes(global) subroutine cal_dispersion_step5_kernel&/;"	s	module:DispersionFluxesSources
+cal_dispersion_step6_kernel	moment_gpu.F	/^attributes(global) subroutine cal_dispersion_step6_kernel&/;"	s	module:DispersionFluxesSources
+calc_mean_kernel	mixing_gpu.F	/^attributes(global) subroutine calc_mean_kernel(/;"	s	module:calculate_mean_module
+calc_sum_kernel	mixing_gpu.F	/^attributes(global) subroutine calc_sum_kernel(/;"	s	module:calculate_mean_module
+calculate_mean_module	mixing_gpu.F	/^module calculate_mean_module$/;"	m
+check_outputD	mod_cuda.F	/^subroutine check_outputD(/;"	s	module:mod_cuda
+check_outputH	mod_cuda.F	/^subroutine check_outputH(/;"	s	module:mod_cuda
+check_print	mod_cuda.F	/^subroutine check_print(/;"	s	module:mod_cuda
+check_print_int	mod_cuda.F	/^subroutine check_print_int(/;"	s	module:mod_cuda
+comm2d	mod_global.F	/^       INTEGER :: comm2d$/;"	v	module:GLOBAL
+construct_HO_x_step1_kernel	moment_gpu.F	/^attributes(global) subroutine construct_HO_x_step1_kernel(/;"	s	module:DispersionFluxesSources
+construct_HO_x_step2_kernel	moment_gpu.F	/^attributes(global) subroutine construct_HO_x_step2_kernel(/;"	s	module:DispersionFluxesSources
+construct_HO_y_step1_kernel	moment_gpu.F	/^attributes(global) subroutine construct_HO_y_step1_kernel(/;"	s	module:DispersionFluxesSources
+construct_HO_y_step2_kernel	moment_gpu.F	/^attributes(global) subroutine construct_HO_y_step2_kernel(/;"	s	module:DispersionFluxesSources
+coords	mod_global.F	/^       INTEGER, DIMENSION(2) :: dims, coords$/;"	v	module:GLOBAL
+cudadeviceQuery	mod_cuda.F	/^subroutine cudadeviceQuery$/;"	s	module:mod_cuda
+cusparse_destroy	mod_cuda.F	/^subroutine cusparse_destroy$/;"	s	module:mod_cuda
+cusparse_init	mod_cuda.F	/^subroutine cusparse_init$/;"	s	module:mod_cuda
+cusparseh	mod_cuda.F	/^    type(cusparseHandle),save :: cusparseh$/;"	v	module:mod_cuda
+dZb	mod_sediment.F	/^    REAL(SP),DIMENSION(:,:),ALLOCATABLE::CHHyR,CHHyL,CHYyL,CHYyR,ZbOld,dZb$/;"	v	module:SEDIMENT_MODULE
+dep_Nwave	mod_global.F	/^                  gamma_Nwave = -3.0, &$/;"	v	module:GLOBAL
+derivative_x_kernel	moment_gpu.F	/^attributes(device) subroutine derivative_x_kernel&/;"	s	module:DispersionFluxesSources
+derivative_xx_kernel	moment_gpu.F	/^attributes(device) subroutine derivative_xx_kernel&/;"	s	module:DispersionFluxesSources
+derivative_xy_kernel	moment_gpu.F	/^attributes(device) subroutine derivative_xy_kernel&/;"	s	module:DispersionFluxesSources
+derivative_y_kernel	moment_gpu.F	/^attributes(device) subroutine derivative_y_kernel&/;"	s	module:DispersionFluxesSources
+derivative_yy_kernel	moment_gpu.F	/^attributes(device) subroutine derivative_yy_kernel&/;"	s	module:DispersionFluxesSources
+dims	mod_global.F	/^       INTEGER, DIMENSION(2) :: dims,/;"	v	module:GLOBAL
+download_var_breaking	mod_cuda.F	/^subroutine download_var_breaking$/;"	s	module:mod_cuda
+download_var_cycle	mod_cuda.F	/^subroutine download_var_cycle$/;"	s	module:mod_cuda
+download_var_dispersion	mod_cuda.F	/^subroutine download_var_dispersion$/;"	s	module:mod_cuda
+download_var_exchange	mod_cuda.F	/^subroutine download_var_exchange$/;"	s	module:mod_cuda
+download_var_fluxes	mod_cuda.F	/^subroutine download_var_fluxes$/;"	s	module:mod_cuda
+download_var_mask	mod_cuda.F	/^subroutine download_var_mask$/;"	s	module:mod_cuda
+download_var_mixing	mod_cuda.F	/^subroutine download_var_mixing$/;"	s	module:mod_cuda
+download_var_source	mod_cuda.F	/^subroutine download_var_source$/;"	s	module:mod_cuda
+download_var_sponge	mod_cuda.F	/^subroutine download_var_sponge$/;"	s	module:mod_cuda
+download_var_tri	mod_cuda.F	/^subroutine download_var_tri$/;"	s	module:mod_cuda
+ec_max	mod_sediment.F	/^    REAL(SP) :: Shields_cr,A_sed,Tau_cr,D_sed,htt,k_s,u_c,ustar_c,ec_max$/;"	v	module:SEDIMENT_MODULE
+ec_max_c	mod_sediment.F	/^    REAL(SP) :: beta_d,reduction,tau_xy,c_a,c_b,ec_max_w,ec_max_c$/;"	v	module:SEDIMENT_MODULE
+ec_max_w	mod_sediment.F	/^    REAL(SP) :: beta_d,reduction,tau_xy,c_a,c_b,ec_max_w,/;"	v	module:SEDIMENT_MODULE
+epsilon	mod_meteo.F	/^    REAL(SP) :: LengthSlide,WidthSlide,AlphaSlide,BetaSlide,PSlide,epsilon$/;"	v	module:METEO_MODULE
+etauv_solver_module	etauv_solver_gpu.F	/^module etauv_solver_module$/;"	m
+eval_sed_load	sediment.F	/^SUBROUTINE eval_sed_load$/;"	s
+filter_count	mod_global.F	/^       INTEGER :: filter_count=/;"	v	module:GLOBAL
+filter_interval	mod_global.F	/^       INTEGER :: filter_count=0, filter_interval /;"	v	module:GLOBAL
+fluxes_gpu	moment_gpu.F	/^subroutine fluxes_gpu$/;"	s	module:DispersionFluxesSources
+freeMem	mod_cuda.F	/^    integer(cuda_count_kind):: freeMem,/;"	v	module:mod_cuda
+gamma1	mod_global.F	/^       REAL(SP) :: gamma1$/;"	v	module:GLOBAL
+gamma2	mod_global.F	/^       REAL(SP) :: gamma2$/;"	v	module:GLOBAL
+gamma3	mod_global.F	/^       REAL(SP) :: gamma3$/;"	v	module:GLOBAL
+gamma_Nwave	mod_global.F	/^                  a0_Nwave = 1.0, &$/;"	v	module:GLOBAL
+grav	mod_param.F	/^       REAL(SP), PARAMETER:: grav=/;"	v	module:PARAM
+grid	mod_cuda.F	/^    type(dim3) :: grid,/;"	v	module:mod_cuda
+grid_range_per_procs	misc.F	/^subroutine grid_range_per_procs(/;"	s
+grid_step1	mod_cuda.F	/^    type(dim3) :: grid, tBlock,grid_step1,/;"	v	module:mod_cuda
+grid_step2	mod_cuda.F	/^    type(dim3) :: grid, tBlock,grid_step1,grid_step2,/;"	v	module:mod_cuda
+grid_tran	mod_cuda.F	/^    type(dim3) :: grid, tBlock,grid_step1,grid_step2,tBlock_tran,&$/;"	v	module:mod_cuda
+grid_tran_back	mod_cuda.F	/^        grid_tran,grid_tran_back$/;"	v	module:mod_cuda
+hll_kernel	moment_gpu.F	/^attributes(global) subroutine hll_kernel(/;"	s	module:DispersionFluxesSources
+htt	mod_sediment.F	/^    REAL(SP) :: Shields_cr,A_sed,Tau_cr,D_sed,htt,/;"	v	module:SEDIMENT_MODULE
+icount	mod_global.F	/^       INTEGER :: icount=/;"	v	module:GLOBAL
+icount_coupling	mod_global.F	/^       INTEGER :: icount_coupling /;"	v	module:GLOBAL
+icount_hotstart	mod_global.F	/^       INTEGER :: icount_hotstart=/;"	v	module:GLOBAL
+icount_mean	mod_global.F	/^       INTEGER :: icount_mean=/;"	v	module:GLOBAL
+icount_winddata	mod_meteo.F	/^       INTEGER :: icount_winddata /;"	v	module:METEO_MODULE
+ier	mod_global.F	/^       INTEGER :: myid,ier$/;"	v	module:GLOBAL
+ignore_big_slope_kernel	masks_gpu.F	/^attributes(global) subroutine ignore_big_slope_kernel(/;"	s	module:update_mask_module
+iiend	mod_global.F	/^       INTEGER :: iista, iiend,/;"	v	module:GLOBAL
+iista	mod_global.F	/^       INTEGER :: iista,/;"	v	module:GLOBAL
+init_gpu	init_gpu.F	/^module init_gpu$/;"	m
+ista	mod_global.F	/^       INTEGER,DIMENSION(:),ALLOCATABLE :: ista,/;"	v	module:GLOBAL
+istat	mod_cuda.F	/^    integer :: istat$/;"	v	module:mod_cuda
+it	main.F	/^    integer :: it$/;"	v	program:FUNWAVE_TVD
+itmp1	mod_param.F	/^       INTEGER :: itmp1,/;"	v	module:PARAM
+itmp2	mod_param.F	/^       INTEGER :: itmp1,itmp2,/;"	v	module:PARAM
+itmp3	mod_param.F	/^       INTEGER :: itmp1,itmp2,itmp3,/;"	v	module:PARAM
+itmp4	mod_param.F	/^       INTEGER :: itmp1,itmp2,itmp3,itmp4,/;"	v	module:PARAM
+itmp5	mod_param.F	/^       INTEGER :: itmp1,itmp2,itmp3,itmp4,itmp5$/;"	v	module:PARAM
+jjend	mod_global.F	/^       INTEGER :: iista, iiend, jjsta, jjend /;"	v	module:GLOBAL
+jjsta	mod_global.F	/^       INTEGER :: iista, iiend, jjsta,/;"	v	module:GLOBAL
+jsta	mod_global.F	/^       INTEGER,DIMENSION(:),ALLOCATABLE :: ista,jsta,/;"	v	module:GLOBAL
+k1	mod_sediment.F	/^    REAL(SP) :: k1,/;"	v	module:SEDIMENT_MODULE
+k2	mod_sediment.F	/^    REAL(SP) :: k1,k2,/;"	v	module:SEDIMENT_MODULE
+k3	mod_sediment.F	/^    REAL(SP) :: k1,k2,k3,/;"	v	module:SEDIMENT_MODULE
+k4	mod_sediment.F	/^    REAL(SP) :: k1,k2,k3,k4,/;"	v	module:SEDIMENT_MODULE
+k_s	mod_sediment.F	/^    REAL(SP) :: Shields_cr,A_sed,Tau_cr,D_sed,htt,k_s,/;"	v	module:SEDIMENT_MODULE
+l	bc.F	/^    INTEGER :: nreq,le/;"	v
+len	bc.F	/^    INTEGER :: nreq,len,/;"	v
+len	exchange_gpu.F	/^    INTEGER :: len,/;"	v
+ll	bc.F	/^    INTEGER :: nreq,len,ll,/;"	v
+mask9uv	moment_gpu.F	/^subroutine mask9uv(/;"	s	module:DispersionFluxesSources
+maxUsedMem	mod_cuda.F	/^    real :: rFreeMem,rUsedMem,rTotalMem,maxUsedMem,/;"	v	module:mod_cuda
+minFreeMem	mod_cuda.F	/^    real :: rFreeMem,rUsedMem,rTotalMem,maxUsedMem,minFreeMem$/;"	v	module:mod_cuda
+mod_cuda	mod_cuda.F	/^module mod_cuda$/;"	m
+mpi_datatype	mgpu_utilities.F	/^subroutine mpi_datatype$/;"	s
+mybeta	bc.F	/^    REAL(sp) :: myvar,mybeta$/;"	v
+myid	mod_global.F	/^       INTEGER :: myid,/;"	v	module:GLOBAL
+myint	mod_bathy_correction.F	/^    INTEGER :: myint$/;"	v	module:BATHY_CORRECTION_MODULE
+myint	mod_tracer.F	/^     INTEGER::myint$/;"	v	module:TRACER
+myvar	bc.F	/^    REAL(sp) :: myvar,/;"	v
+myvar	mod_bathy_correction.F	/^    REAL(SP) :: myvar$/;"	v	module:BATHY_CORRECTION_MODULE
+myvar	mod_meteo.F	/^    REAL(SP) :: myvar$/;"	v	module:METEO_MODULE
+myvar	mod_sediment.F	/^    REAL(SP) :: myvar$/;"	v	module:SEDIMENT_MODULE
+myvar	mod_vessel.F	/^    REAL(SP) :: myvar$/;"	v	module:VESSEL_MODULE
+n_east	mod_global.F	/^       INTEGER :: n_west, n_east,/;"	v	module:GLOBAL
+n_nrth	mod_global.F	/^       INTEGER :: n_west, n_east, n_suth, n_nrth$/;"	v	module:GLOBAL
+n_porosity	mod_sediment.F	/^    REAL(SP) :: D50,Sdensity,n_porosity,/;"	v	module:SEDIMENT_MODULE
+n_suth	mod_global.F	/^       INTEGER :: n_west, n_east, n_suth,/;"	v	module:GLOBAL
+n_west	mod_global.F	/^       INTEGER :: n_west,/;"	v	module:GLOBAL
+ndims	mod_global.F	/^       INTEGER :: ndims=/;"	v	module:GLOBAL
+nprocs	mod_global.F	/^       INTEGER :: nprocs /;"	v	module:GLOBAL
+npx	mod_global.F	/^       INTEGER :: npx,/;"	v	module:GLOBAL
+npy	mod_global.F	/^       INTEGER :: npx,npy$/;"	v	module:GLOBAL
+nreq	bc.F	/^    INTEGER :: nreq,/;"	v
+nsta	mod_global.F	/^       INTEGER,DIMENSION(:),ALLOCATABLE :: ista,jsta,nsta$/;"	v	module:GLOBAL
+nu_bkg	mod_global.F	/^       REAL(SP) :: nu_bkg$/;"	v	module:GLOBAL
+nu_break	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: nu_break,/;"	v	module:GLOBAL
+nu_smg	mod_global.F	/^                  ETAmean,Usum,Vsum,ETAsum, nu_smg$/;"	v	module:GLOBAL
+nu_sponge	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: nu_break,nu_sponge$/;"	v	module:GLOBAL
+nx1	mod_tracer.F	/^     INTEGER,SAVE,DIMENSION(:),ALLOCATABLE :: nx1,/;"	v	module:TRACER
+nx1_pre	mod_tracer.F	/^     INTEGER,SAVE,DIMENSION(:),ALLOCATABLE :: nx1,ny1,nx2,ny2,nx3,ny3,&$/;"	v	module:TRACER
+nx2	mod_tracer.F	/^     INTEGER,SAVE,DIMENSION(:),ALLOCATABLE :: nx1,ny1,nx2,/;"	v	module:TRACER
+nx2_pre	mod_tracer.F	/^        nx1_pre,ny1_pre,nx2_pre,/;"	v	module:TRACER
+nx3	mod_tracer.F	/^     INTEGER,SAVE,DIMENSION(:),ALLOCATABLE :: nx1,ny1,nx2,ny2,nx3,/;"	v	module:TRACER
+nx3_pre	mod_tracer.F	/^        nx1_pre,ny1_pre,nx2_pre,ny2_pre,nx3_pre,/;"	v	module:TRACER
+ny1	mod_tracer.F	/^     INTEGER,SAVE,DIMENSION(:),ALLOCATABLE :: nx1,ny1,/;"	v	module:TRACER
+ny1_pre	mod_tracer.F	/^        nx1_pre,ny1_pre,/;"	v	module:TRACER
+ny2	mod_tracer.F	/^     INTEGER,SAVE,DIMENSION(:),ALLOCATABLE :: nx1,ny1,nx2,ny2,/;"	v	module:TRACER
+ny2_pre	mod_tracer.F	/^        nx1_pre,ny1_pre,nx2_pre,ny2_pre,/;"	v	module:TRACER
+ny3	mod_tracer.F	/^     INTEGER,SAVE,DIMENSION(:),ALLOCATABLE :: nx1,ny1,nx2,ny2,nx3,ny3,/;"	v	module:TRACER
+ny3_pre	mod_tracer.F	/^        nx1_pre,ny1_pre,nx2_pre,ny2_pre,nx3_pre,ny3_pre$/;"	v	module:TRACER
+omgn2D	mod_global.F	/^        REAL(SP),DIMENSION(:),ALLOCATABLE :: omgn2D$/;"	v	module:GLOBAL
+omgn_ir	mod_global.F	/^        REAL(SP),DIMENSION(:),ALLOCATABLE :: Beta_gen_ir,omgn_ir$/;"	v	module:GLOBAL
+periodic_triDx_triDy_cuda	etauv_solver_gpu.F	/^subroutine periodic_triDx_triDy_cuda$/;"	s	module:etauv_solver_module
+periodic_triDy_cusparse	etauv_solver_gpu.F	/^subroutine periodic_triDy_cusparse$/;"	s	module:etauv_solver_module
+periods	mod_global.F	/^       LOGICAL, DIMENSION(2) :: periods$/;"	v	module:GLOBAL
+phase_ir	mod_global.F	/^        REAL(SP),DIMENSION(:,:),ALLOCATABLE :: D_gen_ir,rlamda_ir,phase_ir$/;"	v	module:GLOBAL
+phi_exch	parallel.F	/^SUBROUTINE phi_exch /;"	s
+phi_exch_cuda	mgpu_utilities.F	/^SUBROUTINE phi_exch_cuda /;"	s
+phi_exch_variable_length	parallel.F	/^SUBROUTINE phi_exch_variable_length /;"	s
+phi_int_exch	parallel.F	/^SUBROUTINE phi_int_exch /;"	s
+phi_int_exch_cuda	mgpu_utilities.F	/^SUBROUTINE phi_int_exch_cuda /;"	s
+pi	mod_param.F	/^       REAL(SP), PARAMETER::pi=/;"	v	module:PARAM
+post_tridiagonal_kernel	etauv_solver_gpu.F	/^attributes(global) subroutine post_tridiagonal_kernel(/;"	s	module:etauv_solver_module
+px	mod_global.F	/^       INTEGER :: px,/;"	v	module:GLOBAL
+py	mod_global.F	/^       INTEGER :: px,py$/;"	v	module:GLOBAL
+r	samples.F	/^     REAL(SP) :: r,/;"	v
+rFreeMem	mod_cuda.F	/^    real :: rFreeMem,/;"	v	module:mod_cuda
+rTotalMem	mod_cuda.F	/^    real :: rFreeMem,rUsedMem,rTotalMem,/;"	v	module:mod_cuda
+rUsedMem	mod_cuda.F	/^    real :: rFreeMem,rUsedMem,/;"	v	module:mod_cuda
+reduction	mod_sediment.F	/^    REAL(SP) :: beta_d,reduction,/;"	v	module:SEDIMENT_MODULE
+reorder	mod_global.F	/^       LOGICAL :: reorder /;"	v	module:GLOBAL
+req	bc.F	/^    INTEGER,DIMENSION(1) :: req$/;"	v
+req	exchange_gpu.F	/^    INTEGER,DIMENSION(1) :: req$/;"	v
+rlamda	mod_global.F	/^                  Xc,Yc, WID,Xc_WK,Tperiod,AMP_WK,DEP_WK,Theta_WK, &$/;"	v	module:GLOBAL
+rlamda2D	mod_global.F	/^       REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Beta_gen2D,D_gen2D,rlamda2D,/;"	v	module:GLOBAL
+rlamda_ir	mod_global.F	/^        REAL(SP),DIMENSION(:,:),ALLOCATABLE :: D_gen_ir,rlamda_ir,/;"	v	module:GLOBAL
+sediment_flux	sediment.F	/^SUBROUTINE sediment_flux$/;"	s
+sediment_solver	sediment.F	/^SUBROUTINE sediment_solver(/;"	s
+sediment_source	sediment.F	/^SUBROUTINE sediment_source$/;"	s
+send2d	bc.F	/^    REAL(SP),DIMENSION(Mloc,Nghost) :: xx,send2d$/;"	v
+send2d	exchange_gpu.F	/^    INTEGER,DIMENSION(Mloc,Nghost) :: xx,send2d$/;"	v
+sponge_damping_kernel	sponge_gpu.F	/^attributes(global) subroutine sponge_damping_kernel(/;"	s	module:sponge_module
+sponge_module	sponge_gpu.F	/^module sponge_module$/;"	m
+startEvent	mod_cuda.F	/^    type ( cudaEvent ) :: startEvent /;"	v	module:mod_cuda
+status	bc.F	/^    integer,dimension(MPI_STATUS_SIZE,1) :: status$/;"	v
+status	exchange_gpu.F	/^    integer :: status(/;"	v
+stopEvent	mod_cuda.F	/^    type ( cudaEvent ) :: startEvent , stopEvent$/;"	v	module:mod_cuda
+streamID	mod_cuda.F	/^    integer(kind=cuda_stream_kind),dimension(8), save :: streamID$/;"	v	module:mod_cuda
+stream_d2h	mod_cuda.F	/^    integer(kind=cuda_stream_kind),save :: stream_d2h$/;"	v	module:mod_cuda
+stream_destroy	init_gpu.F	/^subroutine stream_destroy$/;"	s	module:init_gpu
+stream_init	init_gpu.F	/^subroutine stream_init$/;"	s	module:init_gpu
+t1	mod_cuda.F	/^    real(SP) :: t1,/;"	v	module:mod_cuda
+t2	mod_cuda.F	/^    real(SP) :: t1, t2$/;"	v	module:mod_cuda
+tBlock	mod_cuda.F	/^    type(dim3) :: grid, tBlock,/;"	v	module:mod_cuda
+tBlock_tran	mod_cuda.F	/^    type(dim3) :: grid, tBlock,grid_step1,grid_step2,tBlock_tran,/;"	v	module:mod_cuda
+tan_phi	mod_sediment.F	/^    REAL(SP) :: k1,k2,k3,k4,F1,F2,F3,F4,tan_phi,/;"	v	module:SEDIMENT_MODULE
+tau_xy	mod_sediment.F	/^    REAL(SP) :: beta_d,reduction,tau_xy,/;"	v	module:SEDIMENT_MODULE
+tbegin	mod_global.F	/^       REAL(SP) :: tbegin,/;"	v	module:GLOBAL
+tend	mod_global.F	/^       REAL(SP) :: tbegin,tend$/;"	v	module:GLOBAL
+tmp1	mod_param.F	/^       REAL(SP):: tmp1,/;"	v	module:PARAM
+tmp2	mod_param.F	/^       REAL(SP):: tmp1,tmp2,/;"	v	module:PARAM
+tmp3	mod_param.F	/^       REAL(SP):: tmp1,tmp2,tmp3,/;"	v	module:PARAM
+tmp4	mod_param.F	/^       REAL(SP):: tmp1,tmp2,tmp3,tmp4,/;"	v	module:PARAM
+tmp4preview	mod_global.F	/^          Gx,Gy,P,Q,SourceX,SourceY,Int2Flo, &$/;"	v	module:GLOBAL
+tmp5	mod_param.F	/^       REAL(SP):: tmp1,tmp2,tmp3,tmp4,tmp5$/;"	v	module:PARAM
+totalMem	mod_cuda.F	/^    integer(cuda_count_kind):: freeMem,totalMem$/;"	v	module:mod_cuda
+transpose_kernel	etauv_solver_gpu.F	/^attributes(global) subroutine transpose_kernel(/;"	s	module:etauv_solver_module
+triDxDy_mgpu_cuda	etauv_solver_gpu.F	/^subroutine triDxDy_mgpu_cuda$/;"	s	module:etauv_solver_module
+triDxDy_mgpu_cuda_v2	etauv_solver_gpu.F	/^subroutine triDxDy_mgpu_cuda_v2$/;"	s	module:etauv_solver_module
+triDx_backsubstitution_cuda_kernel	etauv_solver_gpu.F	/^attributes(global) subroutine triDx_backsubstitution_cuda_kernel(/;"	s	module:etauv_solver_module
+triDx_cuda_kernel	etauv_solver_gpu.F	/^attributes(global) subroutine triDx_cuda_kernel(/;"	s	module:etauv_solver_module
+triDx_cusparse	etauv_solver_gpu.F	/^subroutine triDx_cusparse$/;"	s	module:etauv_solver_module
+triDx_cusparse_init_kernel	etauv_solver_gpu.F	/^attributes(global) subroutine triDx_cusparse_init_kernel&/;"	s	module:etauv_solver_module
+triDx_forwardsweep_cuda_kernel	etauv_solver_gpu.F	/^attributes(global) subroutine triDx_forwardsweep_cuda_kernel(/;"	s	module:etauv_solver_module
+triDx_init_kernel	etauv_solver_gpu.F	/^attributes(global) subroutine triDx_init_kernel&/;"	s	module:etauv_solver_module
+triDx_mgpu_cuda	etauv_solver_gpu.F	/^subroutine triDx_mgpu_cuda$/;"	s	module:etauv_solver_module
+triDx_triDy_cuda	etauv_solver_gpu.F	/^subroutine triDx_triDy_cuda$/;"	s	module:etauv_solver_module
+triDy_backsubstitution_cuda_kernel	etauv_solver_gpu.F	/^attributes(global) subroutine triDy_backsubstitution_cuda_kernel(/;"	s	module:etauv_solver_module
+triDy_cuda_kernel	etauv_solver_gpu.F	/^attributes(global) subroutine triDy_cuda_kernel(/;"	s	module:etauv_solver_module
+triDy_cusparse	etauv_solver_gpu.F	/^subroutine triDy_cusparse$/;"	s	module:etauv_solver_module
+triDy_cusparse_init_kernel	etauv_solver_gpu.F	/^attributes(global) subroutine triDy_cusparse_init_kernel&/;"	s	module:etauv_solver_module
+triDy_forwardsweep_cuda_kernel	etauv_solver_gpu.F	/^attributes(global) subroutine triDy_forwardsweep_cuda_kernel(/;"	s	module:etauv_solver_module
+triDy_init_kernel	etauv_solver_gpu.F	/^attributes(global) subroutine triDy_init_kernel&/;"	s	module:etauv_solver_module
+triDy_mgpu_cuda	etauv_solver_gpu.F	/^subroutine triDy_mgpu_cuda(/;"	s	module:etauv_solver_module
+u_c	mod_sediment.F	/^    REAL(SP) :: Shields_cr,A_sed,Tau_cr/;"	v	module:SEDIMENT_MODULE
+u_c1	mod_sediment.F	/^    REAL(SP) :: u_c1,/;"	v	module:SEDIMENT_MODULE
+u_c2	mod_sediment.F	/^    REAL(SP) :: u_c1,u_c2,/;"	v	module:SEDIMENT_MODULE
+u_c3	mod_sediment.F	/^    REAL(SP) :: u_c1,u_c2,u_c3,/;"	v	module:SEDIMENT_MODULE
+u_c4	mod_sediment.F	/^    REAL(SP) :: u_c1,u_c2,u_c3,u_c4,/;"	v	module:SEDIMENT_MODULE
+uni	samples.F	/^     REAL(SP) :: r,xr,yr,uni$/;"	v
+update_bed	sediment.F	/^SUBROUTINE update_bed$/;"	s
+update_mask9_kernel	masks_gpu.F	/^attributes(global) subroutine update_mask9_kernel(/;"	s	module:update_mask_module
+update_mask_kernel	masks_gpu.F	/^attributes(global) subroutine update_mask_kernel&/;"	s	module:update_mask_module
+update_mask_module	masks_gpu.F	/^module update_mask_module$/;"	m
+upload_var_breaking	mod_cuda.F	/^subroutine upload_var_breaking$/;"	s	module:mod_cuda
+upload_var_cycle	mod_cuda.F	/^subroutine upload_var_cycle$/;"	s	module:mod_cuda
+upload_var_dispersion	mod_cuda.F	/^subroutine upload_var_dispersion$/;"	s	module:mod_cuda
+upload_var_exchange	mod_cuda.F	/^subroutine upload_var_exchange$/;"	s	module:mod_cuda
+upload_var_fluxes	mod_cuda.F	/^subroutine upload_var_fluxes$/;"	s	module:mod_cuda
+upload_var_mask	mod_cuda.F	/^subroutine upload_var_mask$/;"	s	module:mod_cuda
+upload_var_mixing	mod_cuda.F	/^subroutine upload_var_mixing$/;"	s	module:mod_cuda
+upload_var_source	mod_cuda.F	/^subroutine upload_var_source$/;"	s	module:mod_cuda
+upload_var_sponge	mod_cuda.F	/^subroutine upload_var_sponge$/;"	s	module:mod_cuda
+upload_var_tri	mod_cuda.F	/^subroutine upload_var_tri$/;"	s	module:mod_cuda
+ustar_c	mod_sediment.F	/^    REAL(SP) :: Shields_cr,A_sed,Tau_cr,D_sed,htt,k_s,u_c,ustar_c,/;"	v	module:SEDIMENT_MODULE
+ustar_c1	mod_sediment.F	/^    REAL(SP) :: u_c1,u_c2,u_c3,u_c4,ustar_c1,/;"	v	module:SEDIMENT_MODULE
+ustar_c2	mod_sediment.F	/^    REAL(SP) :: u_c1,u_c2,u_c3,u_c4,ustar_c1,ustar_c2,/;"	v	module:SEDIMENT_MODULE
+ustar_c3	mod_sediment.F	/^    REAL(SP) :: u_c1,u_c2,u_c3,u_c4,ustar_c1,ustar_c2,ustar_c3,/;"	v	module:SEDIMENT_MODULE
+ustar_c4	mod_sediment.F	/^    REAL(SP) :: u_c1,u_c2,u_c3,u_c4,ustar_c1,ustar_c2,ustar_c3,ustar_c4$/;"	v	module:SEDIMENT_MODULE
+var_d2h_mean	mixing_gpu.F	/^subroutine var_d2h_mean$/;"	s	module:calculate_mean_module
+var_d2h_output	mod_cuda.F	/^subroutine var_d2h_output$/;"	s	module:mod_cuda
+visbrk	mod_global.F	/^       REAL(SP) :: visbrk,/;"	v	module:GLOBAL
+viscosity	mod_sediment.F	/^    REAL(SP) :: k1,k2,k3,k4,F1,F2,F3,F4,tan_phi,Dstar,viscosity$/;"	v	module:SEDIMENT_MODULE
+viscosity_wmaker_kernel	breaker_gpu.F	/^attributes(global) subroutine viscosity_wmaker_kernel&/;"	s	module:wave_breaking_module
+wall_time_secs	misc.F	/^    SUBROUTINE wall_time_secs(/;"	s
+wave_breaking_module	breaker_gpu.F	/^module wave_breaking_module$/;"	m
+wave_speed_gpu	moment_gpu.F	/^subroutine wave_speed_gpu$/;"	s	module:DispersionFluxesSources
+wave_speed_kernel	moment_gpu.F	/^attributes(global) subroutine wave_speed_kernel&/;"	s	module:DispersionFluxesSources
+x1_Nwave	mod_global.F	/^        REAL(SP) :: x1_Nwave /;"	v	module:GLOBAL
+x2_Nwave	mod_global.F	/^        REAL(SP) :: x1_Nwave = 5.0, &$/;"	v	module:GLOBAL
+xr	samples.F	/^     REAL(SP) :: r,xr,/;"	v
+xx	bc.F	/^    REAL(SP),DIMENSION(Mloc,Nghost) :: xx,/;"	v
+xx	exchange_gpu.F	/^    INTEGER,DIMENSION(Mloc,Nghost) :: xx,/;"	v
+yr	samples.F	/^     REAL(SP) :: r,xr,yr$/;"	v
+yr	samples.F	/^     REAL(SP) :: r,xr,yr,/;"	v
+zero	mod_param.F	/^       REAL(SP), PARAMETER:: zero /;"	v	module:PARAM
