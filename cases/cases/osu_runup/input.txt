@@ -1,0 +1,81 @@
+!INPUT FILE FOR BOUSS_TVD
+  ! NOTE: all input parameter are capital sensitive
+  ! --------------------TITLE-------------------------------------
+  ! title only for log file
+TITLE = tohoku_tsunami
+  ! -------------------PARALLEL INFO-----------------------------
+  ! 
+  !    PX,PY - processor numbers in X and Y
+  !    NOTE: make sure consistency with mpirun -np n (px*py)
+  !    
+PX = 6
+PY = 6
+  ! --------------------DEPTH-------------------------------------
+  ! Depth types, DEPTH_TYPE=DATA: from depth file
+  !              DEPTH_TYPE=FLAT: idealized flat, need depth_flat
+  !              DEPTH_TYPE=SLOPE: idealized slope, 
+  !                                 need slope,SLP starting point, Xslp
+  !                                 and depth_flat
+DEPTH_TYPE = DATA
+DEPTH_FILE = ../external_files/pac_3min.txt
+
+  ! -------------------PRINT---------------------------------
+  ! PRINT*,
+  ! result folder
+RESULT_FOLDER = ./output/mpiO/
+
+  ! ------------------DIMENSION-----------------------------
+  ! global grid dimension
+Mglob = 3200
+Nglob = 2400
+  ! ----------------- TIME----------------------------------
+  ! time: total computational time/ plot time / screen interval 
+  ! all in seconds
+TOTAL_TIME = 86400.0
+PLOT_INTV = 3600.0
+PLOT_INTV_STATION = 3600.0
+SCREEN_INTV = 3600.0
+  ! -----------------GRID----------------------------------
+  ! if use spherical grid, in decimal degrees
+Lon_West = 132.0
+Lat_South = -60.0
+Dphi = 0.05
+Dtheta = 0.05
+  ! --------------- INITIAL UVZ ---------------------------
+  ! INI_UVZ - initial UVZ e.g., initial deformation
+  !         must provide three (3) files 
+INI_UVZ = T
+  ! if true, input eta u and v file names
+ETA_FILE = ../external_files/H.out
+U_FILE = ../external_files/U.out
+V_FILE = ../external_files/V.out
+  ! ---------------- SPONGE LAYER ------------------------
+DIRECT_SPONGE = T
+FRICTION_SPONGE = T
+Sponge_west_width =  100000.0  ! in meters
+Sponge_east_width =  100000.0
+Sponge_south_width = 100000.0
+Sponge_north_width = 100000.0
+SWE_ETA_DEP = 0.6
+Cd = 0.001
+  ! ----------------NUMERICS----------------------------
+HIGH_ORDER = THIRD
+CFL = 0.5
+  ! Froude Number Cap (to avoid jumping drop, set 10)
+FroudeCap = 2.0
+
+  ! --------------WET-DRY-------------------------------
+  ! MinDepth for wetting-drying
+MinDepth= 10.0
+  ! -----------------
+  ! MinDepthfrc to limit bottom friction
+MinDepthFrc = 10.0
+  ! -----------------OUTPUT-----------------------------
+  ! stations 
+  ! provide lat and lon in degrees
+NumberStations = 0
+STATIONS_FILE = stations-pacific.txt
+  ! output variables, T=.TRUE, F = .FALSE.
+ETA = T
+Hmax = T
+
